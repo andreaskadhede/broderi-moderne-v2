@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test • Broderi Moderne</title>
+
+        <!-- bruger til font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Kite+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- favicon -->
+        <link rel="icon" href="img/logo.webp">
+
+        <!-- meta/seo -->
+        <meta name="geo.region" content="DK-82">
+        <meta name="geo.placename" content="Midtjylland">
+        <meta name="geo.position" content="56.223769;10.123814">
+        <meta name="ICBM" content="56.223769, 10.123814">
+        <meta name="author" content="Andrea Skadhede, Karoline Eriksen, Katrine Emilie Klockmann & Silja Hansen">
+        <meta name="description" content="Ved du ikke, hvad du skal lave som dit næste projekt? Prøv vores inspirations test, og se, hvad du kan lave!">
+    </head>
+
+    <body>
+        <script src="js/burgermenu.js"></script>
+        <script src="js/navbar.js"></script>
+        <header>
+            <!-- logo i navbar -->
+            <a href="index.html" class="logo"><img id="logo-nav" src="img/logo.webp" alt="logo"></a>
+
+            <!-- burgerbar start -->
+            <nav>
+
+                <div id="burger-menu">
+                    <span id="span"></span>
+                </div>
+
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="broderi.html">Broderi</a></li>
+                    <li><a href="haekling.html">Hækling</a></li>
+                    <li><a href="strik.html">Strik</a></li>
+                    <li><a href="om.html">Om os</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="monstermaskine.html">Mønstermaskine</a></li>
+                    <li><img class="logo-menu" src="img/logo.webp" alt="logo"></li>
+                </ul>
+                
+            </nav>
+            <!-- burgerbar slut -->
+        </header>
+        
+        <!-- main start -->
+        <main class="rod">
+            <h1>Test</h1>
+            <h2>Velkommen til vores kreative test</h2>
+            <div class="tekst">
+                <p>Er du i tvivl om hvad dit næste projekt skal være? Og mangler du inspiration til hvad det kunne være?</p>
+                <p>Så tag testen her og vi giver dig nogle valgmuligheder.</p>
+            </div>
+
+            <script src="js/test.js"></script>
+            <div class="moenster-test">
+                <img class="boelgetest-laptop" src="img/moenster/boelge1.webp" alt="Broderet bølge">
+                <img class="boelgetest-laptop" src="img/moenster/boelge2.webp" alt="Broderet bølge" style="display: none;">
+                <img class="boelgetest-laptop" src="img/moenster/boelge3.webp" alt="Broderet bølge" style="display: none;">
+                <img class="boelgetest-laptop" src="img/moenster/boelge4.webp" alt="Broderet bølge" style="display: none;">
+                <img class="boelgetest-laptop" src="img/moenster/boelge5.webp" alt="Broderet bølge" style="display: none;">
+            </div>
+
+            <div class="moenster-test">
+                <img class="boelgetest-mobil" src="img/moenster/boelge6.webp" alt="Broderet bølge">
+                <img class="boelgetest-mobil" src="img/moenster/boelge7.webp" alt="Broderet bølge" style="display: none;">
+                <img class="boelgetest-mobil" src="img/moenster/boelge6.webp" alt="Broderet bølge" style="display: none;">
+                <img class="boelgetest-mobil" src="img/moenster/boelge7.webp" alt="Broderet bølge" style="display: none;">
+                <img class="boelgetest-mobil" src="img/moenster/boelge6.webp" alt="Broderet bølge" style="display: none;">
+            </div>
+
+            <form id="test" class="test">
+                <div class="question" id="question1">
+                    <p>Hvad ønsker du at lave?</p>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="question1" value="A">
+                                <span class="custom-radio"></span> Strikke
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question1" value="B">
+                                <span class="custom-radio"></span> Hækle
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question1" value="C">
+                                <span class="custom-radio"></span> Broderi
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="question omvendt" id="question2" style="display: none;">
+                    <p>Hvad er dit niveau?</p>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="question2" value="A">
+                                <span class="custom-radio"></span> Nybegynder
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question2" value="B">
+                                <span class="custom-radio"></span> Øvet
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question2" value="C">
+                                <span class="custom-radio"></span> Erfaren
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="question" id="question3" style="display: none;">
+                    <p>Hvilke farvenuancer kan du godt lide?</p>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="question3" value="A">
+                                <span class="custom-radio"></span> Varme farver
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question3" value="B">
+                                <span class="custom-radio"></span> Kolde farver
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question3" value="C">
+                                <span class="custom-radio"></span> Begge er okay
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="question omvendt" id="question4" style="display: none;">
+                    <p>Hvilket form for motiv?</p>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="question4" value="A">
+                                <span class="custom-radio"></span> Ord
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question4" value="B">
+                                <span class="custom-radio"></span> Dyr
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question4" value="C">
+                                <span class="custom-radio"></span> Blomster
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="question" id="question5" style="display: none;">
+                    <p>Hvor lang tid har du til projektet?</p>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="question5" value="A">
+                                <span class="custom-radio"></span> Mindre end 10 timer
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question5" value="B">
+                                <span class="custom-radio"></span> Mere end 10 timer
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question5" value="C">
+                                <span class="custom-radio"></span> Jeg har ingen tidsbegrænsning
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <button id="se-resultat" type="button" class="se-resultat button" style="display: none;">Se resultat</button>
+            </form>
+        </main>
+        <!-- main slut -->
+
+        <!-- footer start -->
+        <footer>
+            <div class="left">
+                <section class="tider">
+                    <h4>Åbningstider</h4>
+                    <p>Mandag-fredag kl. 11.00 – 17.30</p>
+                    <p>Lørdag kl. 10.00 – 14.00</p>
+                </section>
+                <div class="social">
+                    <p>Sociale medier</p>
+                    <a href="https://www.facebook.com/broderimoderne/?locale=da_DK" target=”_blank”><img src="img/ikoner/facebook.webp" alt="Facebook logo"> </a>
+                    <a href="https://www.instagram.com/broderimoderne/?hl=da" target=”_blank”><img src="img/ikoner/instagram.webp" alt="Instagram logo"> </a>
+                </div>
+            </div>
+
+            <div class="footer-billede">
+                <img src="img/logo.webp" alt="logo">
+            </div>
+
+            <div class="right">
+                <div class="info">
+                    <address>Broderi Moderne<br>Nørre Alle 45<br>8000 Århus C</address>
+                    <p>CVR: 41442778</p>
+                </div>
+                <div class="social">
+                    <p><a href="mailto:info@broderi-moderne.dk">info@broderi-moderne.dk</a></p>
+                    <p><a href="tel:+4551911244">+45 51 91 12 44</a></p>
+                </div>
+            </div>
+
+            <section class="tider-m">
+                <h4>Åbningstider</h4>
+                <p>Mandag-fredag<br>kl. 11.00 – 17.30</p>
+                <p>Lørdag<br>kl. 10.00 – 14.00</p>
+            </section>
+            <div class="social-m">
+                <p>Sociale medier</p>
+                <a href="https://www.facebook.com/broderimoderne/?locale=da_DK" target=”_blank”><img src="img/ikoner/facebook.webp" alt="Facebook logo"> </a>
+                <a href="https://www.instagram.com/broderimoderne/?hl=da" target=”_blank”><img src="img/ikoner/instagram.webp" alt="Instagram logo"> </a>
+            </div>
+
+            <section class="info-m">
+                <h4>Adresse</h4>
+                <address>Broderi Moderne<br>Nørre Alle 45</address>
+                <p>8000 Århus C<br>CVR: 41442778</p>
+            </section>
+            <div class="kontakt-footer-m">
+                <p><a href="mailto:info@broderi-moderne.dk">info@broderi-moderne.dk</a></p>
+                <p><a href="tel:+4551911244">+45 51 91 12 44</a></p>
+            </div>
+        </footer>
+        <!-- footer slut -->
+
+
+    </body>
+</html>

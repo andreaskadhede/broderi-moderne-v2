@@ -1208,6 +1208,20 @@ footer h4 {
 /***********************************************************************************************************/
 /***********************************************************************************************************/
 
+.shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vw 150px;
+    flex-direction: column;
+}
+
+.shop p {
+    color: var(--brown);
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+}
+
 .kurv {
     height: 50px;
     width: 45px;
@@ -1220,20 +1234,31 @@ footer h4 {
     width: 100%;
 }
 
-.produkt {
-    width: 265px;
-    height: 360px;
-    background-color: var(--beige);
-    border-radius: 25px;
+.shop .streg {
+    margin: 10px 0 50px;
+}
+
+.kategori {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
-    font-family: "Krub", sans-serif;
-    font-weight: 400;
-    color: var(--brown);
+    width: 100%;
 }
+
+.karruseller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* .produkt h4 {
+    width: 190px;
+    text-align: center;
+    /* text-wrap: nowrap; */
 
 .produkt h4, .pris {
     font-size: 24px;
@@ -1291,7 +1316,70 @@ footer h4 {
     font-size: 35px;
     font-weight: 1;
     line-height: 0.2;
-    padding: 5px 0;
+    padding: 11px 0;
+}
+
+.karrusel-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0 50px;
+}
+
+.karrusel-boks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    width: 915px;
+}
+
+.karrusel {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 40px;
+}
+
+.karrusel-objekt {
+    min-width: 265px;
+    max-width: 265px;
+}
+
+.produkt {
+    width: 100%;
+    height: 360px;
+    background-color: var(--beige);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    color: var(--brown);
+}
+
+.prev, .next {
+    cursor: pointer;
+}
+
+.next {
+    margin-left: -40px;
+}
+
+
+.se-alt {
+    border: var(--blue) solid 5px;
+    color: var(--blue);
+    padding: 7.5px 25px;
+    font-size: 1.2rem;
+    background-color: var(--bluefaded);
+    width: 220px;
 }
 
 /***********************************************************************************************************/

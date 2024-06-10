@@ -1330,9 +1330,6 @@ footer h4 {
     font-size: 1.5rem;
 }
 
-/************************************************** SHOP - DIN KURV *************************************************/
-.kurv-indhold
-
 
 /***********************************************************************************************************/
 /********************************************** SHOP - BRODERI *********************************************/
@@ -1350,10 +1347,102 @@ footer h4 {
 /************************************************** KURV ***************************************************/
 /***********************************************************************************************************/
 
+.kurv-indhold {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--brown);
+    font-family: "Krub", sans-serif;
+}
 
+.kurv-titler {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 13.5%;
+    align-items: center;
+    width: 60%;
+    margin-right: 6.5%;
+}
 
+.kurv-produkt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 3%;
+}
 
+.kurv-img {
+    border-radius: 50%;
+    width: 10%;
+}
 
+.kurv-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10%;
+    width: 60%;
+    margin: 5%;
+}
+
+.kurv-priser {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20%;
+    align-items: center;
+    width: 60%;
+}
+
+.kurv-tekst {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dropdown menu til antal - start */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    color: var(--brown);
+    background-color: var(--background);
+    padding: 1px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Krub", sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--beige);
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--brown);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--background);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown menu til antal - slut */
 /***********************************************************************************************************/
 /***********************************************************************************************************/
 /************************************************** @MEDIA *************************************************/

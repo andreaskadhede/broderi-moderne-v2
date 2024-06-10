@@ -1232,6 +1232,7 @@ footer h4 {
     gap: 5px;
     font-family: "Krub", sans-serif;
     font-weight: 400;
+    color: var(--brown);
 }
 
 .produkt h4, .pris {

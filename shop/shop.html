@@ -35,7 +35,7 @@
             <!-- burgerbar start -->
             <nav>
 
-                <a class="kurv" href="kurv.html"><img src="/img/ikoner/kurv.webp" alt="kurv ikon"></a>
+                <a id="cart-icon" class="kurv" href="kurv.html"><img src="/img/ikoner/kurv.webp" alt="kurv ikon"><span id="cart-count">0</span></a>
 
                 <div id="burger-menu">
                     <span id="span"></span>
@@ -59,6 +59,8 @@
           
         <!-- main start -->
         <script src="/js/slider.js"></script>
+        <script src="/js/kurv.js"></script>
+
         <main class="shop bla">
             <h1>Shop</h1>
 
@@ -87,7 +89,7 @@
                                         <p class="pris">199 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/blomster-og-bier.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Blomster og bier', 199.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -99,7 +101,7 @@
                                         <p class="pris">54 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/broderinaale.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Broderinåle', 54.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -111,7 +113,7 @@
                                         <p class="pris">40 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/broderiramme.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Broderiramme', 40.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -123,7 +125,7 @@
                                         <p class="pris">13 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/flora-wool.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Flora Wool', 13.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -135,7 +137,7 @@
                                         <p class="pris">199 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/maleri.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Maleri', 199.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -147,7 +149,7 @@
                                         <p class="pris">249 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/paradis-fugl.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('HParadis fugl', 249.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -178,7 +180,7 @@
                                         <p class="pris">50 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/haeklenaal.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Hæklenål', 50.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -190,7 +192,7 @@
                                         <p class="pris">79 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/pure-merino.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Pure merino', 79.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -202,7 +204,7 @@
                                         <p class="pris">249 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/solsikke-boellehat.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Solsikke bøllehat', 249.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -214,7 +216,7 @@
                                         <p class="pris">199 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/stribet-taske.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Stribet taske', 199.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -226,7 +228,7 @@
                                         <p class="pris">229 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/vest.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Vest', 229.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -260,7 +262,7 @@
                                         <p class="pris">99 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/lille-torklaede.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Lille tærklæde', 99.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -272,7 +274,7 @@
                                         <p class="pris">108 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/rundpind.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Rundpind', 108.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -284,7 +286,7 @@
                                         <p class="pris">249 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/stribet-troeje.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Stribet trøje', 249.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -296,7 +298,7 @@
                                         <p class="pris">249 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/uld-stroemper.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Uld strømper', 249.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -308,7 +310,7 @@
                                         <p class="pris">160 DKK</p>
                                         <div class="knapper">
                                             <a class="laes-mere" href="produkter/oeko-merino-uld.html">Læs mere</a>
-                                            <button class="add">+</button>
+                                            <button onclick="addToCart('Øko merino uld', 160.00)" class="add">+</button>
                                         </div>
                                     </section>
                                 </div>
@@ -323,20 +325,12 @@
                 </section>
 
             </div>
-        
-
-
-            <!-- produkt boks -->
-            <!--                         <section class="produkt">
-                            <h4>Paradis fugl</h4>
-                            <img class="produkt-billede" src="/img/kits/kit-broderi.webp" alt="">
-                            <p class="lille-tekst">Broderi kit</p>
-                            <p class="pris">249 DKK</p>
-                            <div class="knapper">
-                                <a class="laes-mere" href="produkter/paradis-fugl.html">Læs mere</a>
-                                <button class="add">+</button>
-                            </div>
-                        </section> -->
+            <div id="cart-popup" class="hidden">
+                <h2>Shopping Cart</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: <span id="cart-total">0.00</span> DKK</p>
+                <!-- cart-total viser det antal varer der er i kurven -->
+            </div>
         </main>
         <!-- main slut -->
         

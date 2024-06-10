@@ -1220,6 +1220,79 @@ footer h4 {
     width: 100%;
 }
 
+.produkt {
+    width: 265px;
+    height: 360px;
+    background-color: var(--beige);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+}
+
+.produkt h4, .pris {
+    font-size: 24px;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+}
+
+.produkt-billede {
+    border-radius: 50%;
+    background-color: var(--background);
+    width: 175px;
+    height: 175px;
+    margin-bottom: 10px;
+}
+
+.lille-tekst {
+    font-size: 11px;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    margin-bottom: -2.5px;
+}
+
+.produkt .knapper {
+    display: flex;
+    justify-content: baseline;
+    gap: 10px;
+    margin-top: 7.5px;
+}
+
+.laes-mere {
+    border: var(--blue) solid 3px;
+    color: var(--blue);
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: var(--bluefaded);
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 95px;
+    font-family: "futura";
+    text-align: center;
+    padding: 5px 0;
+}
+
+.add {
+    border: var(--red) solid 3px;
+    color: var(--red);
+    border-radius: 25px;
+    background-color: var(--redfaded);
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 34.5px;
+    height: 34.5px;
+    font-family: "futura";
+    text-align: center;
+    font-size: 35px;
+    font-weight: 1;
+    line-height: 0.2;
+    padding: 5px 0;
+}
+
 /***********************************************************************************************************/
 /********************************************** SHOP - BRODERI *********************************************/
 /***********************************************************************************************************/

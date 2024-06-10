@@ -2078,7 +2078,7 @@ footer h4 {
 }
 
 .shop_broderi-p{
-    font-weight: 10;
+    
     text-align: center;
     font-family: "Krub", sans-serif;
     font-weight: 100;
@@ -2087,6 +2087,16 @@ footer h4 {
 }
 
 .shop_broderi-img{
-    height: 80%;
-    width: 70%;
+    margin-top: 5%;
+    width: 100%;
 }
+
+.shop_broderi-filtrer{
+    text-align: left;
+    font-family: "Krub", sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+/************************************************** SHOP - DIN KURV *************************************************/
+.kurv-indhold

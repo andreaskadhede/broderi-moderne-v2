@@ -1320,8 +1320,10 @@ footer h4 {
     width: 100%;
 }
 
+
 .shop_broderi-filtrer{
-    margin-left: 5%;
+    margin-left: 15%;
+    margin-top: 4%;
     font-family: "Krub", sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
@@ -1329,9 +1331,47 @@ footer h4 {
 
 
 .produkt-broderi{
-
+   margin-top: 2%;
+    margin-left: 15%;
+    display: inline-flex;
+  
 }
 
+.produkt-broderi:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+}
+.produkt-broderi2{
+    margin-left: 4%;
+    display: inline-flex;
+}
+.produkt-broderi2:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+}
+
+.produkt-broderi3{
+    margin-left: 15%;
+    margin-top: 4%;
+    display: inline-flex;
+}
+.produkt-broderi3:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+}
+
+.produkt-broderi{
+    margin-top: 2%;
+     margin-left: 15%;
+     display: inline-flex;
+ }
+ 
+ .produkt-broderi2{
+     margin-left: 4%;
+     display: inline-flex;
+ }
+ 
+ 
 
 
 

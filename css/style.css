@@ -1350,7 +1350,7 @@ footer h4 {
 }
 
 .produkt {
-    width: 100%;
+    width: 265px;
     height: 360px;
     background-color: var(--beige);
     border-radius: 25px;
@@ -1386,82 +1386,33 @@ footer h4 {
 
 /************************************************** SHOP - BRODERI *************************************************/
 
-.shop_broderi-h1{
-    color: #bbcae7;
+.shop .streg {
+    margin: 10px 0 50px;
 }
-
-.shop_broderi-h2{
-    color: #bbcae7;
-}
-
-.shop_broderi-p{
-    
-    text-align: center;
-    font-family: "Krub", sans-serif;
-    font-weight: 100;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.shop_broderi-img{
-    margin-top: 5%;
-    width: 100%;
-}
-
 
 
 .shop_broderi-filtrer{
-    margin-left: 15%;
-    margin-top: 4%;
     font-family: "Krub", sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
+    align-self: flex-start;
+    margin: 0 0 15px 100px;
 }
 
-
-.produkt-broderi{
-   margin-top: 2%;
-    margin-left: 15%;
-    display: inline-flex;
-  
+.produkter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
 }
 
-.produkt-broderi:hover {
+/* .produkt:hover {
     transform: scale(1.05);
     transition: all 0.3s ease; 
-}
-.produkt-broderi2{
-    margin-left: 4%;
-    display: inline-flex;
-}
-.produkt-broderi2:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease; 
-}
-
-.produkt-broderi3{
-    margin-left: 15%;
-    margin-top: 4%;
-    display: inline-flex;
-}
-.produkt-broderi3:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease; 
-}
-
-.produkt-broderi{
-    margin-top: 2%;
-     margin-left: 15%;
-     display: inline-flex;
- }
- 
- .produkt-broderi2{
-     margin-left: 4%;
-     display: inline-flex;
- }
- 
- 
-
+} */
 
 
 /************************************************** SHOP - DIN KURV *************************************************/

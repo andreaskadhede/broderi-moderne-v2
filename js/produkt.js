@@ -48,13 +48,21 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     const farveBeskrivelse = document.getElementById('farve-beskrivelse');
     const storbillede = document.getElementById('storbillede');
-    const farveKoder = {
-        "betteryarn-0001.webp": "Farve 1 - #FFFFFF",
-        "betteryarn-0005.webp": "Farve 2 - #CCCCCC",
-        "betteryarn-0007.webp": "Farve 3 - #999999",
-        "betteryarn-1133.webp": "Farve 4 - #666666",
-        "betteryarn-4007.webp": "Farve 5 - #333333",
-        "betteryarn-4906.webp": "Farve 6 - #000000"
+    const farveNavn = {
+        "betteryarn-0001.webp": "Beige hvid",
+        "betteryarn-0005.webp": "Grå",
+        "betteryarn-0007.webp": "Mørk grå",
+        "betteryarn-1133.webp": "Brun",
+        "betteryarn-4007.webp": "Sort",
+        "betteryarn-4906.webp": "Hvid"
+    };
+    const farveKode = {
+        "betteryarn-0001.webp": "0001",
+        "betteryarn-0005.webp": "0005",
+        "betteryarn-0007.webp": "0007",
+        "betteryarn-1133.webp": "1133",
+        "betteryarn-4007.webp": "4007",
+        "betteryarn-4906.webp": "4906"
     };
 
     const lillebilleder = document.querySelectorAll('.lillebillede');
@@ -63,9 +71,17 @@ document.addEventListener("DOMContentLoaded", function() {
     lillebilleder.forEach(lillebillede => {
         lillebillede.addEventListener('click', function() {
             const colorImage = lillebillede.getAttribute('src').split('/').pop(); // Hent billedets filnavn
-            const farveBeskrivelseTekst = farveKoder[colorImage];
-            farveBeskrivelse.textContent = farveBeskrivelseTekst;
+            const farveNavnTekst = farveNavn[colorImage];
+            const farveKodeTekst = farveKode[colorImage];
+            farveBeskrivelse.textContent = farveNavnTekst + ' - ' + farveKodeTekst;
             storbillede.src = '/img/produkter/' + colorImage;
         });
     });
 });
+
+
+
+
+
+
+

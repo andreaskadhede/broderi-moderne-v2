@@ -1770,7 +1770,8 @@ color: #bbcae7;
     width: 50%;
 }
 
-.produkt-hoejre h3, p{
+.produkt-hoejre h3,
+.produkt-hoejre p{
     text-align: start;
     font-family: "Krub", sans-serif;
     color: var(--brown);

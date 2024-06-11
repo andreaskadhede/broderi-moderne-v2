@@ -1469,13 +1469,37 @@ footer h4 {
 /* .produkt:hover {
     transform: scale(1.05);
     transition: all 0.3s ease; 
-} */
+}
+.produkt-broderi2{
+    margin-left: 4%;
+    display: inline-flex;
+}
+.produkt-broderi2:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+}
 
+.produkt-broderi3{
+    margin-left: 15%;
+    margin-top: 4%;
+    display: inline-flex;
+}
+.produkt-broderi3:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+}
 
-/************************************************** SHOP - DIN KURV *************************************************/
-.kurv-indhold
-
-
+.produkt-broderi{
+    margin-top: 2%;
+     margin-left: 15%;
+     display: inline-flex;
+ }
+ 
+ .produkt-broderi2{
+     margin-left: 4%;
+     display: inline-flex;
+ }
+ 
 /***********************************************************************************************************/
 /********************************************** SHOP - BRODERI *********************************************/
 /***********************************************************************************************************/
@@ -1492,14 +1516,9 @@ footer h4 {
 /************************************************** KURV ***************************************************/
 /***********************************************************************************************************/
 
-.kurv-indhold {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--brown);
-    font-family: "Krub", sans-serif;
-}
+/***********************************************************************************************************/
+/************************************************** PURE MERINO ***************************************************/
+/***********************************************************************************************************/
 
 .kurv-titler {
     font-size: 20px;
@@ -1508,7 +1527,7 @@ footer h4 {
     justify-content: flex-end;
     gap: 13.5%;
     align-items: center;
-    width: 60%;
+    width: 45%;
     margin-right: 6.5%;
 }
 

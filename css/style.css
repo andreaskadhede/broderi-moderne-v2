@@ -1388,7 +1388,6 @@ footer h4 {
     margin-left: -40px;
 }
 
-
 .se-alt {
     border: var(--blue) solid 5px;
     color: var(--blue);
@@ -1398,15 +1397,19 @@ footer h4 {
     width: 220px;
 }
 
+
+
 #cart-popup {
     position: fixed;
     right: 20px;
-    top: 60px;
-    width: 300px;
-    background: white;
-    border: 1px solid #ddd;
-    padding: 1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 100px;
+    width: 400px;
+    background: var(--background);
+    border: 5px solid var(--blue);
+    padding: 1.25rem;
+    text-align: left;
+    border-radius: 25px;
+    z-index: 7;
 }
 
 #cart-popup.hidden {
@@ -1416,28 +1419,40 @@ footer h4 {
 #cart-popup ul {
     list-style: none;
     padding: 0;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    color: var(--brown);
 }
 
 #cart-popup li {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0.5em 0;
+    justify-content: left;
+    margin: 15px 0;
+    gap: 25px;
+}
+
+
+#cart-popup #total {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+#cart-popup li p {
+    justify-self: flex-end;
+    width: 150px;
 }
 
 #cart-popup li button {
-    background-color: #dc3545;
-    color: white;
+    font-size: 0.8rem;
+    text-decoration: underline;
     border: none;
-    padding: 0.2em 0.5em;
+    background-color: transparent;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    color: var(--brown);
     cursor: pointer;
 }
-
-#cart-popup li button:hover {
-    background-color: #c82333;
-}
-
-
 
 /************************************************** SHOP - BRODERI *************************************************/
 
@@ -1446,13 +1461,29 @@ footer h4 {
 }
 
 
-.shop_broderi-filtrer{
+.filter{
     font-family: "Krub", sans-serif;
     font-weight: 100;
+    color: var(--brown);
     font-size: 1.5rem;
     align-self: flex-start;
+
     margin: 0 0 15px 100px;
 }
+
+#muligheder {
+    position: absolute;
+    background-color: var(--background);
+    padding: 0 10px 5px;
+    margin-left: -5px;
+    font-size: 1.25rem;
+    width: 150px;
+}
+
+#muligheder li {
+    padding: 0 0 5px;
+}
+
 
 .produkter {
     display: flex;
@@ -1520,15 +1551,37 @@ footer h4 {
 /************************************************** PURE MERINO ***************************************************/
 /***********************************************************************************************************/
 
-.kurv-titler {
+.kurv-indhold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kurv-produkt p {
+    color: var(--brown);
+    font-family: "Krub", sans-serif;
+}
+
+.kurv-titler p {
+    color: var(--brown);
+    font-family: "Krub", sans-serif; 
+}
+
+.kurv-titler1 {
     font-size: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    gap: 13.5%;
+    justify-content: flex-start;
     align-items: center;
-    width: 45%;
-    margin-right: 6.5%;
+    width: 60%;
+    gap: 48%;
+}
+
+.kurv-titler2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 20%;
 }
 
 .kurv-produkt {
@@ -1536,7 +1589,7 @@ footer h4 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
     margin-top: 3%;
 }
 
@@ -1548,10 +1601,10 @@ footer h4 {
 .kurv-info {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 10%;
+    justify-content: space-between;
+
     width: 60%;
-    margin: 5%;
+    margin: 5% 0 5% 5%;
 }
 
 .kurv-priser {
@@ -1566,6 +1619,18 @@ footer h4 {
 .kurv-tekst {
     display: flex;
     flex-direction: column;
+}
+
+#skjulKnap1, #skjulKnap2, #skjulKnap3 {
+    color: var(--brown);
+    background-color: var(--background);
+    padding: 1px;
+    font-size: 12px;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+    font-family: "Krub", sans-serif;
+    text-align: left; 
 }
 
 /* Dropdown menu til antal - start */
@@ -1605,7 +1670,51 @@ footer h4 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* Dropdown menu til antal - slut */
 
+#kurv-slut {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60%;
+}
+
+#kurv-slut .levering {
+    color: var(--brown);
+    font-size: 15px;
+    font-family: "Krub", sans-serif;
+}
+
+.endelig-pris {
+    color: var(--brown);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 29%;
+    font-size: 20px;
+    font-family: "Krub", sans-serif;
+}
+
+#betal {
+    border: var(--blue) solid 5px;
+    color: var(--blue);
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    background-color: var(--bluefaded);
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 275px;
+    font-family: "futura";
+    text-align: center;
+    margin: 5% 5% 1% 5%;
+}
+
+#shop-videre {
+    color: var(--brown);
+    text-decoration: underline;
+    font-family: "Krub", sans-serif;
+}
 
 
 /***********************************************************************************************************/

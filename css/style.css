@@ -1830,10 +1830,12 @@ color: #bbcae7;
 .produkt-hoejre h3 {
     font-size: 2rem;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .produkt-hoejre p{
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .produkt-storbillede img {
@@ -1847,6 +1849,14 @@ color: #bbcae7;
     grid-template-columns: repeat(6, 1fr); /* Reducer kolonner til 3 for mindre billeder */
     gap: 5px;
     margin-top: 10px;
+}
+
+.lillebillede {
+    border-radius: 3px;
+}
+
+#storbillede {
+    border-radius: 3px;
 }
 
 .produkt-lillebilleder img {

@@ -1461,13 +1461,29 @@ footer h4 {
 }
 
 
-.shop_broderi-filtrer{
+.filter{
     font-family: "Krub", sans-serif;
     font-weight: 100;
+    color: var(--brown);
     font-size: 1.5rem;
     align-self: flex-start;
+
     margin: 0 0 15px 100px;
 }
+
+#muligheder {
+    position: absolute;
+    background-color: var(--background);
+    padding: 0 10px 5px;
+    margin-left: -5px;
+    font-size: 1.25rem;
+    width: 150px;
+}
+
+#muligheder li {
+    padding: 0 0 5px;
+}
+
 
 .produkter {
     display: flex;

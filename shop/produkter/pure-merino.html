@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt • Broderi Moderne</title>
+    <title>Pure Merino No. 4 • Broderi Moderne</title>
 
 
     <!-- bruges til kortet -->
@@ -67,17 +67,41 @@
                 <!-- kontakt formular -->
                 <div class="produkt-venstre">
                     <div class="produkt-storbillede">
-                        <img src="/img/produkter/betteryarn-0001.webp" alt="Garn">
+                        <img id="storbillede" src="/img/produkter/betteryarn-0001.webp" alt="Garn">
                     </div>
                     <div class="produkt-lillebilleder">
-                        <img src="/img/produkter/betteryarn-0001.webp" alt="garn">
-                        <img src="/img/produkter/betteryarn-0005.webp" alt="garn">
-                        <img src="/img/produkter/betteryarn-0007.webp" alt="garn">
-                        <img src="/img/produkter/betteryarn-1133.webp" alt="garn">
-                        <img src="/img/produkter/betteryarn-4007.webp" alt="garn">
-                        <img src="/img/produkter/betteryarn-4906.webp" alt="garn">
+                        <div class="lillebillede-wrapper">
+                            <img class="lillebillede" src="/img/produkter/betteryarn-0001.webp" alt="garn">
+                            <div class="lillebillede-overlay">Tekst 1</div>
+                        </div>
+
+                        <div class="lillebillede-wrapper">
+                            <img class="lillebillede" src="/img/produkter/betteryarn-0005.webp" alt="garn">
+                            <div class="lillebillede-overlay">Tekst 1</div>
+                        </div>
+
+                        <div class="lillebillede-wrapper">
+                            <img class="lillebillede" src="/img/produkter/betteryarn-0007.webp" alt="garn">
+                            <div class="lillebillede-overlay">Tekst 1</div>
+                        </div>
+
+                        <div class="lillebillede-wrapper">
+                            <img class="lillebillede" src="/img/produkter/betteryarn-1133.webp" alt="garn">
+                            <div class="lillebillede-overlay">Tekst 1</div>
+                        </div>
+
+                        <div class="lillebillede-wrapper">
+                            <img class="lillebillede" src="/img/produkter/betteryarn-4007.webp" alt="garn">
+                            <div class="lillebillede-overlay">Tekst 1</div>
+                        </div>
+
+                        <div class="lillebillede-wrapper">
+                            <img class="lillebillede" src="/img/produkter/betteryarn-4906.webp" alt="garn">
+                            <div class="lillebillede-overlay">Tekst 1</div>
+                        </div>
+
+                        </div>
                     </div>
-                </div>
 
                 <div class="dobbelt-v"></div>
 
@@ -103,14 +127,19 @@
                     <br>
                     <p>Producent: Better Yarn</p>
                     <br>
-                    <a class="produkt-filter" href="#">Filtrér</a>
+
+                    <div class="produkt-farve">
+                        Farve: <span id="farve-beskrivelse">Vælg en farve</span>
+                    </div>
+
+
                     <br>
                     <h3>79 DKK</h3>
                     
                     <div class="produkt-antal">
                         <button id="minus-knap">-</button>
                         <input type="text" id="antal" value="1">
-                        <button id="plus-knap">+</button>
+                        <button id="plus-knap"> + </button>
                         <button class="tilfoej-kurv">Tilføj til kurv</button>
                     </div>
 

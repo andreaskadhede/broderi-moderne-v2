@@ -1728,18 +1728,31 @@ color: #bbcae7;
     font-family: "Krub", sans-serif;
     font-weight: 100;
     font-size: 1rem;
-    margin-left: -15%;
-    margin-top: 2%;
+    margin-left: 45%;
+    margin-top: 5%;
     cursor: pointer;
     color: #b38c72;
 }
+
+.ordrep3{
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Krub", sans-serif;
+    font-weight: 100;
+    font-size: 20rem;
+    margin-top: 50%;
+}
+
+
+/***********************************************************************************************************/
+/************************************************** Produktbeskrivelse *************************************/
+/***********************************************************************************************************/
 
 .kurv-billede{
     width: 55%;
     margin-left: 20%;
     margin-top: 6%;
 }
-
 
 
 

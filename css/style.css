@@ -1495,6 +1495,123 @@ footer h4 {
 /***********************************************************************************************************/
 
 
+
+
+.produkt-hoejre {
+    width: 90%;
+    font-size: 1rem;
+}
+.produkt-venstre,
+.produkt-hoejre {
+    flex: 1; /* Sørger for at begge sektioner fylder lige meget plads */
+}
+
+.produkt-hoejre {
+    width: 50%;
+}
+
+.produkt-hoejre h3, p{
+    text-align: start;
+    font-family: "Krub", sans-serif;
+    color: var(--brown);
+    font-weight: 400;
+}
+
+.produkt-hoejre h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.produkt-hoejre p{
+    font-size: 1.1rem;
+}
+
+.produkt-storbillede img {
+    width: 40vw;
+    height: auto;
+    display: block;
+}
+
+.produkt-lillebilleder {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Reducer kolonner til 3 for mindre billeder */
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.produkt-lillebilleder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.produkt-hoejre {
+    display: flex;
+    flex-direction: column;
+}
+
+#map {
+    width: 100%;
+    height: 300px; /* Angiv en højde for kortet */
+}
+
+/*tilføj til kurv*/
+.produkt-antal {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.produkt-antal button, .produkt-antal input {
+    font-size: 24px;
+    padding: 5px;
+    margin: 0 6px;
+}
+
+.produkt-antal button{
+    font-family: "futura";
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: solid var(--blue) 4px;
+    color: var(--blue);
+    background-color: var(--bluefaded);
+}
+
+.produkt-antal input {
+    width: 40px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Krub", sans-serif;
+    color: var(--brown);
+    background: none;
+    border: none;
+}
+
+.tilfoej-kurv {
+    border: var(--blue);
+    border-radius: 30%;
+    border-width: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tilfoej-kurv:hover {
+    background-color: var(--blue);
+    color: var(--bluefaded);
+}
+
+.produkt-antal button:hover {
+    background-color: var(--blue);
+    color: var(--bluefaded);
+    cursor: pointer; 
+    border: solid var(--bluefaded) 4px
+}
+
+
+
+
 /* Dropdown menu til antal - slut */
 /***********************************************************************************************************/
 /***********************************************************************************************************/

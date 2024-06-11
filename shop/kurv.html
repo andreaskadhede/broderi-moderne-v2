@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Kite+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- favicon -->
-    <link rel="icon" href="img/logo.webp">
+    <link rel="icon" href="/img/logo.webp">
 
     <!-- meta/seo -->
     <meta name="geo.region" content="DK-82">
@@ -26,29 +26,31 @@
 
 </head>
     <body>
-        <script src="js/burgermenu.js"></script>
-        <script src="js/navbar.js"></script>
+        <script src="/js/burgermenu.js"></script>
+        <script src="/js/navbar.js"></script>
         <header>
             <!-- logo i navbar -->
-            <a href="index.html" class="logo"><img id="logo-nav" src="../img/logo.webp" alt="logo"></a>
+            <a href="/index.html" class="logo"><img id="logo-nav" src="/img/logo.webp" alt="logo"></a>
 
             <!-- burgerbar start -->
             <nav>
+
+                <a class="kurv" href="kurv.html"><img src="/img/ikoner/kurv.webp" alt="kurv ikon"></a>
 
                 <div id="burger-menu">
                     <span id="span"></span>
                 </div>
 
                 <ul class="menu" id="menu">
-                    <li><a href="index.html">Forside</a></li>
-                    <li><a href="broderi.html">Broderi</a></li>
-                    <li><a href="haekling.html">Hækling</a></li>
-                    <li><a href="strik.html">Strik</a></li>
-                    <li><a href="om.html">Om os</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="shop/shop.html">Shop</a></li>
-                    <li><a href="monstermaskine.html">Mønstermaskine</a></li>
-                    <li><img class="logo-menu" src="img/logo.webp" alt="logo"></li>
+                    <li><a href="/index.html">Forside</a></li>
+                    <li><a href="/broderi.html">Broderi</a></li>
+                    <li><a href="/haekling.html">Hækling</a></li>
+                    <li><a href="/strik.html">Strik</a></li>
+                    <li><a href="/om.html">Om os</a></li>
+                    <li><a href="/kontakt.html">Kontakt</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="/monstermaskine.html">Mønstermaskine</a></li>
+                    <li><img class="logo-menu" src="/img/logo.webp" alt="logo"></li>
                 </ul>
                 
             </nav>
@@ -56,29 +58,59 @@
         </header>
           
         <!-- main start -->
-    <main class="bla">
-        <h1>DIN KURV</h1>
-        <div class="kurv-indhold">
-            <div class="kurv-titler">
-            <p>Produkt</p>
-            <p>Pris pr. stk.</p>
-            <p>Antal</p>
-            <p>I alt</p>
-            </div>
-            <div class="kurv-produkt">
-                <img src="../img/produkter/flora-8871.webp" alt="Flora Wool broderigarn i farven grøn(8871)">
-                <div class="kurv-info">
-                    <div class="kurv-tekst">
-                    <p>Flora Wool • Fru Zippe</p>
-                    <p>Fjern fra kurv</p>
+        <main class="bla">
+            <h1>Din kurv</h1>
+            <div class="kurv-indhold">
+                <div class="kurv-titler">
+                    <p>Produkt</p>
+                    <p>Pris pr. stk.</p>
+                    <p>Antal</p>
+                    <p>I alt</p>
+                </div>
+                <div class="kurv-produkt">
+                    <img class="kurv-img" src="../img/produkter/flora-8871.webp" alt="Flora Wool broderigarn i farven grøn(8871)">
+                    <div class="kurv-info">
+                        <div class="kurv-tekst">
+                            <p>Flora Wool • Fru Zippe</p>
+                            <p>Fjern fra kurv</p>
+                        </div>
+                        <p id="pris-per-stk1">13 DKK</p>
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropdownButton1">Vælg antal</button>
+                            <div class="dropdown-content" id="dropdownContent1">
+                                <a href="#" onclick="selectOption(1)">1 stk.</a>
+                                <a href="#" onclick="selectOption(2)">2 stk.</a>
+                                <a href="#" onclick="selectOption(3)">3 stk.</a>
+                                <a href="#" onclick="selectOption(4)">4 stk.</a>
+                                <a href="#" onclick="selectOption(5)">5 stk.</a>
+                            </div>
+                        </div>
+                        <p id="total-price1">0 DKK</p>
                     </div>
-                <p>13 DKK</p>
-                <p>3 stk.</p>
-                <p>39 DKK</p>
+               </div>
+               <div class="kurv-produkt">
+                <img class="kurv-img" src="../img/kits/kit-blomst-bi.webp" alt="Flora Wool broderigarn i farven grøn(8871)">
+                    <div class="kurv-info">
+                        <div class="kurv-tekst">
+                        <p>Broderi Kit • Blomster og Bier</p>
+                        <p>Fjern fra kurv</p>
+                        </div>
+                        <p id="pris-per-stk2">199 DKK</p>
+                        <div class="dropdown">
+                        <button class="dropbtn" id="dropdownButton2">Vælg antal</button>
+                            <div class="dropdown-content" id="dropdownContent2">
+                            <a href="#" onclick="selectOption(1)">1 stk.</a>
+                            <a href="#" onclick="selectOption(2)">2 stk.</a>
+                            <a href="#" onclick="selectOption(3)">3 stk.</a>
+                            <a href="#" onclick="selectOption(4)">4 stk.</a>
+                            <a href="#" onclick="selectOption(5)">5 stk.</a>
+                            </div>
+                        </div>
+                        <p id="total-price2">0 DKK</p>
+                    </div>
                 </div>
             </div>
-       </div>
-    </main>
+        </main>
         <!-- main slut -->
         
         <!-- footer start -->
@@ -91,13 +123,13 @@
                 </section>
                 <div class="social">
                     <p>Sociale medier</p>
-                    <a href="https://www.facebook.com/broderimoderne/?locale=da_DK" target=”_blank”><img src="img/ikoner/facebook.webp" alt="Facebook logo"> </a>
-                    <a href="https://www.instagram.com/broderimoderne/?hl=da" target=”_blank”><img src="img/ikoner/instagram.webp" alt="Instagram logo"> </a>
+                    <a href="https://www.facebook.com/broderimoderne/?locale=da_DK" target=”_blank”><img src="/img/ikoner/facebook.webp" alt="Facebook logo"> </a>
+                    <a href="https://www.instagram.com/broderimoderne/?hl=da" target=”_blank”><img src="/img/ikoner/instagram.webp" alt="Instagram logo"> </a>
                 </div>
             </div>
 
             <div class="footer-billede">
-                <img src="../img/logo.webp" alt="logo">
+                <img src="/img/logo.webp" alt="logo">
             </div>
 
             <div class="right">
@@ -118,8 +150,8 @@
             </section>
             <div class="social-m">
                 <p>Sociale medier</p>
-                <a href="https://www.facebook.com/broderimoderne/?locale=da_DK" target=”_blank”><img src="../img/ikoner/facebook.webp" alt="Facebook logo"> </a>
-                <a href="https://www.instagram.com/broderimoderne/?hl=da" target=”_blank”><img src="../img/ikoner/instagram.webp" alt="Instagram logo"> </a>
+                <a href="https://www.facebook.com/broderimoderne/?locale=da_DK" target=”_blank”><img src="/img/ikoner/facebook.webp" alt="Facebook logo"> </a>
+                <a href="https://www.instagram.com/broderimoderne/?hl=da" target=”_blank”><img src="/img/ikoner/instagram.webp" alt="Instagram logo"> </a>
             </div>
 
             <section class="info-m">
@@ -133,5 +165,6 @@
             </div>
         </footer>
         <!-- footer slut -->
+        <script src="/js/antal-dropdown.js"></script>
     </body>
 </html>

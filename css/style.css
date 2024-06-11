@@ -1208,6 +1208,20 @@ footer h4 {
 /***********************************************************************************************************/
 /***********************************************************************************************************/
 
+.shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vw 150px;
+    flex-direction: column;
+}
+
+.shop p {
+    color: var(--brown);
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+}
+
 .kurv {
     height: 50px;
     width: 45px;
@@ -1220,20 +1234,47 @@ footer h4 {
     width: 100%;
 }
 
-.produkt {
-    width: 265px;
-    height: 360px;
-    background-color: var(--beige);
-    border-radius: 25px;
+#cart-count {
+    background: var(--blue);
+    opacity: 1;
+    color: var(--background);
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    position: absolute;
+    font-family: "Krub", sans-serif;
+    top: 33px;
+    right: 115px;
+}
+
+.shop .streg {
+    margin: 10px 0 50px;
+}
+
+.kategori {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
-    font-family: "Krub", sans-serif;
-    font-weight: 400;
-    color: var(--brown);
+    width: 100%;
 }
+
+.karruseller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* .produkt h4 {
+    width: 190px;
+    text-align: center;
+    /* text-wrap: nowrap; */
 
 .produkt h4, .pris {
     font-size: 24px;
@@ -1291,48 +1332,142 @@ footer h4 {
     font-size: 35px;
     font-weight: 1;
     line-height: 0.2;
-    padding: 5px 0;
+    padding: 11px 0;
+}
+
+.karrusel-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0 50px;
+}
+
+.karrusel-boks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    width: 915px;
+}
+
+.karrusel {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 40px;
+}
+
+.karrusel-objekt {
+    min-width: 265px;
+    max-width: 265px;
+}
+
+.produkt {
+    width: 265px;
+    height: 360px;
+    background-color: var(--beige);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    color: var(--brown);
+}
+
+.prev, .next {
+    cursor: pointer;
+}
+
+.next {
+    margin-left: -40px;
+}
+
+
+.se-alt {
+    border: var(--blue) solid 5px;
+    color: var(--blue);
+    padding: 7.5px 25px;
+    font-size: 1.2rem;
+    background-color: var(--bluefaded);
+    width: 220px;
+}
+
+#cart-popup {
+    position: fixed;
+    right: 20px;
+    top: 60px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-popup.hidden {
+    display: none;
+}
+
+#cart-popup ul {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-popup li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+#cart-popup li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+}
+
+#cart-popup li button:hover {
+    background-color: #c82333;
 }
 
 
 
 /************************************************** SHOP - BRODERI *************************************************/
 
-.shop_broderi-h1{
-    color: #bbcae7;
+.shop .streg {
+    margin: 10px 0 50px;
 }
 
-.shop_broderi-h2{
-    color: #bbcae7;
-}
-
-.shop_broderi-p{
-    
-    text-align: center;
-    font-family: "Krub", sans-serif;
-    font-weight: 100;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.shop_broderi-img{
-    margin-top: 5%;
-    width: 100%;
-}
 
 .shop_broderi-filtrer{
-    margin-left: 5%;
     font-family: "Krub", sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
+    align-self: flex-start;
+    margin: 0 0 15px 100px;
 }
 
-
-.produkt-broderi{
-
+.produkter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
 }
 
-
+/* .produkt:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+} */
 
 
 /************************************************** SHOP - DIN KURV *************************************************/
@@ -1355,15 +1490,20 @@ footer h4 {
 /************************************************** KURV ***************************************************/
 /***********************************************************************************************************/
 
+<<<<<<< HEAD
 /***********************************************************************************************************/
 /************************************************** PURE MERINO ***************************************************/
 /***********************************************************************************************************/
 
 .bla {
+=======
+.kurv-indhold {
+>>>>>>> be60fb7e608e9f71ac276c4b8306fbfc1e9ac1f5
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     height: auto;
     color: var(--blue);
 }
@@ -1514,8 +1654,99 @@ footer h4 {
 
 .hidden {
     display: none;
+=======
+    color: var(--brown);
+    font-family: "Krub", sans-serif;
 }
 
+.kurv-titler {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 13.5%;
+    align-items: center;
+    width: 60%;
+    margin-right: 6.5%;
+>>>>>>> be60fb7e608e9f71ac276c4b8306fbfc1e9ac1f5
+}
+
+.kurv-produkt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 3%;
+}
+
+.kurv-img {
+    border-radius: 50%;
+    width: 10%;
+}
+
+.kurv-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10%;
+    width: 60%;
+    margin: 5%;
+}
+
+.kurv-priser {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20%;
+    align-items: center;
+    width: 60%;
+}
+
+.kurv-tekst {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dropdown menu til antal - start */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    color: var(--brown);
+    background-color: var(--background);
+    padding: 1px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Krub", sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--beige);
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--brown);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--background);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown menu til antal - slut */
 /***********************************************************************************************************/
 /***********************************************************************************************************/
 /************************************************** @MEDIA *************************************************/

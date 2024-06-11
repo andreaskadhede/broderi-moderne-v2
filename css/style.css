@@ -1388,7 +1388,6 @@ footer h4 {
     margin-left: -40px;
 }
 
-
 .se-alt {
     border: var(--blue) solid 5px;
     color: var(--blue);
@@ -1398,15 +1397,19 @@ footer h4 {
     width: 220px;
 }
 
+
+
 #cart-popup {
     position: fixed;
     right: 20px;
-    top: 60px;
-    width: 300px;
-    background: white;
-    border: 1px solid #ddd;
-    padding: 1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 100px;
+    width: 400px;
+    background: var(--background);
+    border: 5px solid var(--blue);
+    padding: 1.25rem;
+    text-align: left;
+    border-radius: 25px;
+    z-index: 7;
 }
 
 #cart-popup.hidden {
@@ -1416,28 +1419,40 @@ footer h4 {
 #cart-popup ul {
     list-style: none;
     padding: 0;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    color: var(--brown);
 }
 
 #cart-popup li {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0.5em 0;
+    justify-content: left;
+    margin: 15px 0;
+    gap: 25px;
+}
+
+
+#cart-popup #total {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+#cart-popup li p {
+    justify-self: flex-end;
+    width: 150px;
 }
 
 #cart-popup li button {
-    background-color: #dc3545;
-    color: white;
+    font-size: 0.8rem;
+    text-decoration: underline;
     border: none;
-    padding: 0.2em 0.5em;
+    background-color: transparent;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    color: var(--brown);
     cursor: pointer;
 }
-
-#cart-popup li button:hover {
-    background-color: #c82333;
-}
-
-
 
 /************************************************** SHOP - BRODERI *************************************************/
 
@@ -1463,6 +1478,8 @@ footer h4 {
     align-items: center;
     width: 70vw;
 }
+
+
 
 /* .produkt:hover {
     transform: scale(1.05);
@@ -1630,6 +1647,164 @@ footer h4 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+
+/***********************************************************************************************************/
+/************************************************** ORDREBEKRÆFTELSE ***************************************/
+/***********************************************************************************************************/
+
+.ordreh1{
+    color: #bbcae7;
+}
+
+.ordreh2{
+color: #bbcae7;
+}
+
+.ordrep{
+    font-family: "Krub", sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ordre-boelge{
+    margin-top: 15%;
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+.ordrep2{
+    text-decoration: underline;
+    font-family: "Krub", sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+.produkt-hoejre {
+    width: 90%;
+    font-size: 1rem;
+}
+.produkt-venstre,
+.produkt-hoejre {
+    flex: 1; /* Sørger for at begge sektioner fylder lige meget plads */
+}
+
+.produkt-hoejre {
+    width: 50%;
+}
+
+.produkt-hoejre h3, p{
+    text-align: start;
+    font-family: "Krub", sans-serif;
+    color: var(--brown);
+    font-weight: 400;
+}
+
+.produkt-hoejre h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.produkt-hoejre p{
+    font-size: 1.1rem;
+}
+
+.produkt-storbillede img {
+    width: 40vw;
+    height: auto;
+    display: block;
+}
+
+.produkt-lillebilleder {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Reducer kolonner til 3 for mindre billeder */
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.produkt-lillebilleder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.produkt-hoejre {
+    display: flex;
+    flex-direction: column;
+}
+
+#map {
+    width: 100%;
+    height: 300px; /* Angiv en højde for kortet */
+}
+
+/*tilføj til kurv*/
+.produkt-antal {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.produkt-antal button, .produkt-antal input {
+    font-size: 24px;
+    padding: 5px;
+    margin: 0 6px;
+}
+
+.produkt-antal button{
+    font-family: "futura";
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: solid var(--blue) 4px;
+    color: var(--blue);
+    background-color: var(--bluefaded);
+}
+
+.produkt-antal input {
+    width: 40px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Krub", sans-serif;
+    color: var(--brown);
+    background: none;
+    border: none;
+}
+
+.tilfoej-kurv {
+    border: var(--blue);
+    border-radius: 30%;
+    border-width: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tilfoej-kurv:hover {
+    background-color: var(--blue);
+    color: var(--bluefaded);
+}
+
+.produkt-antal button:hover {
+    background-color: var(--blue);
+    color: var(--bluefaded);
+    cursor: pointer; 
+    border: solid var(--bluefaded) 4px
+}
+
+
+
+
 /* Dropdown menu til antal - slut */
 
 

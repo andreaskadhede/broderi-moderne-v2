@@ -1,43 +1,32 @@
-document.addEventListener("DOMContentLoaded", function() {
-const prisPerStk1 = 13; // Pris pr. stk. for første produkt
-const prisPerStk2 = 199; // Pris pr. stk. for andet produkt
+const prisPerStk1 = 13;
+const prisPerStk2 = 199;
+const prisPerStk3 = 54;
 
-function selectOption(value, productNumber) {
-    const antal = parseInt(value);
-    let totalPris;
-    
-    if (productNumber === 1) {
-        totalPris = antal * prisPerStk1;
-        document.getElementById("dropdownButton1").textContent = `${value} stk.`;
-        document.getElementById("total-price1").textContent = `${totalPris} DKK`;
-    } else if (productNumber === 2) {
-        totalPris = antal * prisPerStk2;
-        document.getElementById("dropdownButton2").textContent = `${value} stk.`;
-        document.getElementById("total-price2").textContent = `${totalPris} DKK`;
-    }
-
-    document.getElementById("dropdownContent" + productNumber).style.display = "none";
+function selectOption(quantity, pricePerUnit, totalPriceId, dropdownButtonId, dropdownContentId) {
+    const totalPriceElement = document.getElementById(totalPriceId);
+    const totalPrice = quantity * pricePerUnit;
+    totalPriceElement.textContent = `${totalPrice} DKK`;
+    document.getElementById(dropdownButtonId).textContent = `${quantity} stk.`;
+    document.getElementById(dropdownContentId).style.display = "none";
 }
 
-// Åbn dropdown igen, når der klikkes på knappen
+// eventlisteners til hver dropdown
 document.getElementById("dropdownButton1").addEventListener("click", function() {
-    toggleDropdown(1);
+    const dropdownContent = document.getElementById("dropdownContent1");
+    dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
 });
 
 document.getElementById("dropdownButton2").addEventListener("click", function() {
-    toggleDropdown(2);
+    const dropdownContent = document.getElementById("dropdownContent2");
+    dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
 });
 
-function toggleDropdown(productNumber) {
-    const dropdownContent = document.getElementById("dropdownContent" + productNumber);
-    if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-    } else {
-        dropdownContent.style.display = "block";
-    }
-}
+document.getElementById("dropdownButton3").addEventListener("click", function() {
+    const dropdownContent = document.getElementById("dropdownContent3");
+    dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+});
 
-// Luk dropdown, hvis der klikkes udenfor den
+// Luk dropdown igen, hvis der klikkes
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         const dropdowns = document.getElementsByClassName("dropdown-content");
@@ -49,4 +38,3 @@ window.onclick = function(event) {
         }
     }
 }
-});

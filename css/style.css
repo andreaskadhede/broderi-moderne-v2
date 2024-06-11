@@ -1479,16 +1479,42 @@ footer h4 {
     width: 70vw;
 }
 
+
+
 /* .produkt:hover {
     transform: scale(1.05);
     transition: all 0.3s ease; 
-} */
+}
+.produkt-broderi2{
+    margin-left: 4%;
+    display: inline-flex;
+}
+.produkt-broderi2:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+}
 
+.produkt-broderi3{
+    margin-left: 15%;
+    margin-top: 4%;
+    display: inline-flex;
+}
+.produkt-broderi3:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+}
 
-/************************************************** SHOP - DIN KURV *************************************************/
-.kurv-indhold
-
-
+.produkt-broderi{
+    margin-top: 2%;
+     margin-left: 15%;
+     display: inline-flex;
+ }
+ 
+ .produkt-broderi2{
+     margin-left: 4%;
+     display: inline-flex;
+ }
+ 
 /***********************************************************************************************************/
 /********************************************** SHOP - BRODERI *********************************************/
 /***********************************************************************************************************/
@@ -1505,14 +1531,9 @@ footer h4 {
 /************************************************** KURV ***************************************************/
 /***********************************************************************************************************/
 
-.kurv-indhold {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--brown);
-    font-family: "Krub", sans-serif;
-}
+/***********************************************************************************************************/
+/************************************************** PURE MERINO ***************************************************/
+/***********************************************************************************************************/
 
 .kurv-titler {
     font-size: 20px;
@@ -1521,7 +1542,7 @@ footer h4 {
     justify-content: flex-end;
     gap: 13.5%;
     align-items: center;
-    width: 60%;
+    width: 45%;
     margin-right: 6.5%;
 }
 
@@ -1599,6 +1620,163 @@ footer h4 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+
+/***********************************************************************************************************/
+/************************************************** ORDREBEKRÆFTELSE ***************************************/
+/***********************************************************************************************************/
+
+.ordreh1{
+    color: #bbcae7;
+}
+
+.ordreh2{
+color: #bbcae7;
+}
+
+.ordrep{
+    font-family: "Krub", sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ordre-boelge{
+    margin-top: 15%;
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+.ordrep2{
+    text-decoration: underline;
+    font-family: "Krub", sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+.produkt-hoejre {
+    width: 90%;
+    font-size: 1rem;
+}
+.produkt-venstre,
+.produkt-hoejre {
+    flex: 1; /* Sørger for at begge sektioner fylder lige meget plads */
+}
+
+.produkt-hoejre {
+    width: 50%;
+}
+
+.produkt-hoejre h3, p{
+    text-align: start;
+    font-family: "Krub", sans-serif;
+    color: var(--brown);
+    font-weight: 400;
+}
+
+.produkt-hoejre h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.produkt-hoejre p{
+    font-size: 1.1rem;
+}
+
+.produkt-storbillede img {
+    width: 40vw;
+    height: auto;
+    display: block;
+}
+
+.produkt-lillebilleder {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Reducer kolonner til 3 for mindre billeder */
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.produkt-lillebilleder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.produkt-hoejre {
+    display: flex;
+    flex-direction: column;
+}
+
+#map {
+    width: 100%;
+    height: 300px; /* Angiv en højde for kortet */
+}
+
+/*tilføj til kurv*/
+.produkt-antal {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.produkt-antal button, .produkt-antal input {
+    font-size: 24px;
+    padding: 5px;
+    margin: 0 6px;
+}
+
+.produkt-antal button{
+    font-family: "futura";
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: solid var(--blue) 4px;
+    color: var(--blue);
+    background-color: var(--bluefaded);
+}
+
+.produkt-antal input {
+    width: 40px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Krub", sans-serif;
+    color: var(--brown);
+    background: none;
+    border: none;
+}
+
+.tilfoej-kurv {
+    border: var(--blue);
+    border-radius: 30%;
+    border-width: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tilfoej-kurv:hover {
+    background-color: var(--blue);
+    color: var(--bluefaded);
+}
+
+.produkt-antal button:hover {
+    background-color: var(--blue);
+    color: var(--bluefaded);
+    cursor: pointer; 
+    border: solid var(--bluefaded) 4px
+}
+
+
+
 
 /* Dropdown menu til antal - slut */
 /***********************************************************************************************************/

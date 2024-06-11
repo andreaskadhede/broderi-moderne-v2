@@ -1468,6 +1468,12 @@ footer h4 {
     font-size: 1.5rem;
     align-self: flex-start;
 
+
+}
+
+.filter-boks {
+    width: 150px;
+    border-radius: 25px;
     margin: 0 0 15px 100px;
 }
 
@@ -1475,9 +1481,10 @@ footer h4 {
     position: absolute;
     background-color: var(--background);
     padding: 0 10px 5px;
-    margin-left: -5px;
+    margin-left: -10px;
     font-size: 1.25rem;
-    width: 150px;
+    border: var(--blue) 5px solid;
+    border-radius: 25px;
 }
 
 #muligheder li {

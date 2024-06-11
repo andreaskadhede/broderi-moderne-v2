@@ -1464,6 +1464,8 @@ footer h4 {
     width: 70vw;
 }
 
+
+
 /* .produkt:hover {
     transform: scale(1.05);
     transition: all 0.3s ease; 
@@ -1584,6 +1586,46 @@ footer h4 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+
+/***********************************************************************************************************/
+/************************************************** ORDREBEKRÆFTELSE ***************************************/
+/***********************************************************************************************************/
+
+.ordreh1{
+    color: #bbcae7;
+}
+
+.ordreh2{
+color: #bbcae7;
+}
+
+.ordrep{
+    font-family: "Krub", sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ordre-boelge{
+    margin-top: 15%;
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+.ordrep2{
+    text-decoration: underline;
+    font-family: "Krub", sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+
+
 
 /* Dropdown menu til antal - slut */
 /***********************************************************************************************************/

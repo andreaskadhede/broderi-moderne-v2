@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pure Merino • Broderi Moderne</title>
+    <title>Kontakt • Broderi Moderne</title>
+
+
+    <!-- bruges til kortet -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
 
     <!-- bruger til font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +18,7 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <!-- favicon -->
-    <link rel="icon" href="img/logo.webp">
+    <link rel="icon" href="/img/logo.webp">
 
     <!-- meta/seo -->
     <meta name="geo.region" content="DK-82">
@@ -21,13 +26,13 @@
     <meta name="geo.position" content="56.223769;10.123814">
     <meta name="ICBM" content="56.223769, 10.123814">
     <meta name="author" content="Andrea Skadhede, Karoline Eriksen, Katrine Emilie Klockmann & Silja Hansen">
-    <meta name="description" content="Læs om os, Lene og Dorthe, som du vil kunne møde i butikken, når du besøger Broderi Moderne.">
+    <meta name="description" content="Kontakt os hos Broderi Moderne, hvis du har sprøgsmål til broderi, hækling eller strik!">
     
 
 </head>
     <body>
-        <script src="js/burgermenu.js"></script>
-        <script src="js/navbar.js"></script>
+        <script src="/js/burgermenu.js"></script>
+        <script src="/js/navbar.js"></script>
         <header>
             <!-- logo i navbar -->
             <a href="index.html" class="logo"><img id="logo-nav" src="/img/logo.webp" alt="logo"></a>
@@ -46,8 +51,9 @@
                     <li><a href="strik.html">Strik</a></li>
                     <li><a href="om.html">Om os</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="shop/shop.html">Shop</a></li>
                     <li><a href="monstermaskine.html">Mønstermaskine</a></li>
-                    <li><img class="logo-menu" src="img/logo.webp" alt="logo"></li>
+                    <li><img class="logo-menu" src="/img/logo.webp" alt="logo"></li>
                 </ul>
                 
             </nav>
@@ -55,47 +61,73 @@
         </header>
           
         <!-- main start -->
-        <main class="bla">
-            <h1>Pure Merino No. 4</h1>
+    <main class="bla">
+        <h1>Produkt</h1>
+        <div class="product-top">
+            <!-- produkt detaljer -->
+            <form action="product.php" class="product-details">
 
-            <div class="produkt-container">
-                <div class="produkt-img-container">
-                    <img src="/img/produkter/betteryarn-0001.webp" alt="Pure Merino garn">
-                    <div class="produkt-small-img-container">
-                        <img src="/img/produkter/betteryarn-0001.webp" alt="Small image 1">
-                        <img src="/img/produkter/betteryarn-0005.webp" alt="Small image 2">
-                        <img src="/img/produkter/betteryarn-0007.webp" alt="Small image 3">
-                        <img src="/img/produkter/betteryarn-1133.webp" alt="Small image 4">
-                        <img src="/img/produkter/betteryarn-4007.webp" alt="Small image 5">
-                        <img src="/img/produkter/betteryarn-4906.webp" alt="Small image 6">
+                <div class="product-name">
+                    <div class="brand">
+                        <label for="brand">Brand*</label>
+                        <input type="text" id="brand" name="brand" required>
+                    </div>
+
+                    <div class="model">
+                        <label for="model">Model*</label>
+                        <input type="text" id="model" name="model" required>
                     </div>
                 </div>
-                <div class="produkt-text-container">
-                    <h3>Pure Merino No. 4 • Better Yarn</h3>
-                    <br>
-                    <p>Denne 100% Extra Fine Mulesing-free Merino Wool har en udsøgte blødhed, der gør det muligt at bære direkte mod huden.</p>
-                    <br>
-                    <p>Det er ideelt til den nyfødte baby, men også for den kvalitetsbevidste strikker, der søger hverdagsluksus med god samvittighed og ønsker et liv uden kemi.</p>
-                    <br>
-                    <p>Løbelægnde: 50 gram, ca 180 m</p>
-                    <br>
-                    <p>Indhold: 100% Extra Fine Mulesing-free Merino Wool</p>
-                    <br>
-                    <p>Pind: 3,5</p>
-                    <br>
-                    <p>Strikkefasthed: 27 m x 37 p</p>
-                    <br>
-                    <p>Vask: Bør håndvaskes</p>
-                    <br>
-                    <p>Tørring: Liggende fladt</p>
-                    <br>
-                    <p>Producent: Better Yarn</p>
-                </div>
-            </div>
-        
-        </main>
-        <!-- main slut -->
 
+                <div class="description">
+                    <label for="description">Beskrivelse*</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <button class="button" id="submit" type="submit" value="Submit">Indsend</button>
+            
+            </form>
+
+            <div class="double-v"></div>
+
+            <!-- kort -->
+            <script src="/js/map.js"></script>
+            <div class="find-location">
+                <h3>Find placering</h3>
+                <div id="map"></div>
+            </div>
+        </div>
+
+        <!-- mønster -->
+        <div class="wave"></div>
+
+        <!-- kalender -->
+        <script src="/js/kalender.js"></script>
+        <section class="calendar">
+            <h2>Kalender</h2>
+            <p class="text">I løbet af måneden afholder vi også workshops i butikken, hvor du kan udfordre dig selv på nye teknikker eller blive beriget med ny inspiration.</p>
+            <h3>Maj 2024</h3>
+
+            <div class="calendar-events">
+                <picture id="may" class="calendar0">
+                    <source media="(max-width:820px)" srcset="/img/calendar/may-mobile.webp">
+                    <img src="/img/calendar/may.webp" alt="May Calendar">
+                </picture>
+
+                <picture id="june" class="hidden calendar0">
+                    <source media="(max-width:820px)" srcset="/img/calendar/june-mobile.webp">
+                    <img src="/img/calendar/june.webp" alt="June Calendar">
+                </picture>
+
+                <a href="workshop.html" class="calendar-event calendar1" id="event1">
+                    <h4>Workshop</h4>
+                    <p>Sammentræssyning</p>
+                </a>
+
+                <!-- More events here -->
+            </div>
+        </section>
+    </main>
+    <!-- main slut -->
         
         <!-- footer start -->
         <footer>
@@ -107,13 +139,13 @@
                 </section>
                 <div class="social">
                     <p>Sociale medier</p>
-                    <a href="https://www.facebook.com/broderimoderne/?locale=da_DK" target=”_blank”><img src="img/ikoner/facebook.webp" alt="Facebook logo"> </a>
-                    <a href="https://www.instagram.com/broderimoderne/?hl=da" target=”_blank”><img src="img/ikoner/instagram.webp" alt="Instagram logo"> </a>
+                    <a href="https://www.facebook.com/broderimoderne/?locale=da_DK" target=”_blank”><img src="/img/ikoner/facebook.webp" alt="Facebook logo"> </a>
+                    <a href="https://www.instagram.com/broderimoderne/?hl=da" target=”_blank”><img src="/img/ikoner/instagram.webp" alt="Instagram logo"> </a>
                 </div>
             </div>
 
             <div class="footer-billede">
-                <img src="img/logo.webp" alt="logo">
+                <img src="/img/logo.webp" alt="logo">
             </div>
 
             <div class="right">
@@ -149,6 +181,7 @@
             </div>
         </footer>
         <!-- footer slut -->
+
 
     </body>
 </html>

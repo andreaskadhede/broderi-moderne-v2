@@ -1464,16 +1464,42 @@ footer h4 {
     width: 70vw;
 }
 
+
+
 /* .produkt:hover {
     transform: scale(1.05);
     transition: all 0.3s ease; 
-} */
+}
+.produkt-broderi2{
+    margin-left: 4%;
+    display: inline-flex;
+}
+.produkt-broderi2:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+}
 
+.produkt-broderi3{
+    margin-left: 15%;
+    margin-top: 4%;
+    display: inline-flex;
+}
+.produkt-broderi3:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+}
 
-/************************************************** SHOP - DIN KURV *************************************************/
-.kurv-indhold
-
-
+.produkt-broderi{
+    margin-top: 2%;
+     margin-left: 15%;
+     display: inline-flex;
+ }
+ 
+ .produkt-broderi2{
+     margin-left: 4%;
+     display: inline-flex;
+ }
+ 
 /***********************************************************************************************************/
 /********************************************** SHOP - BRODERI *********************************************/
 /***********************************************************************************************************/
@@ -1493,6 +1519,131 @@ footer h4 {
 /***********************************************************************************************************/
 /************************************************** PURE MERINO ***************************************************/
 /***********************************************************************************************************/
+
+.kurv-titler {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 13.5%;
+    align-items: center;
+    width: 45%;
+    margin-right: 6.5%;
+}
+
+.kurv-produkt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 3%;
+}
+
+.kurv-img {
+    border-radius: 50%;
+    width: 10%;
+}
+
+.kurv-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10%;
+    width: 60%;
+    margin: 5%;
+}
+
+.kurv-priser {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20%;
+    align-items: center;
+    width: 60%;
+}
+
+.kurv-tekst {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dropdown menu til antal - start */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    color: var(--brown);
+    background-color: var(--background);
+    padding: 1px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Krub", sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--beige);
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--brown);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--background);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/***********************************************************************************************************/
+/************************************************** ORDREBEKRÆFTELSE ***************************************/
+/***********************************************************************************************************/
+
+.ordreh1{
+    color: #bbcae7;
+}
+
+.ordreh2{
+color: #bbcae7;
+}
+
+.ordrep{
+    font-family: "Krub", sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ordre-boelge{
+    margin-top: 15%;
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+.ordrep2{
+    text-decoration: underline;
+    font-family: "Krub", sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+
 
 
 

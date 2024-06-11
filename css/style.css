@@ -1551,14 +1551,21 @@ footer h4 {
     font-family: "Krub", sans-serif; 
 }
 
-.kurv-titler {
+.kurv-titler1 {
     font-size: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    gap: 13.5%;
+    justify-content: flex-start;
     align-items: center;
-    width: 45%;
+    width: 60%;
+    gap: 48%;
+}
+
+.kurv-titler2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 20%;
 }
 
 .kurv-produkt {
@@ -1566,7 +1573,7 @@ footer h4 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
     margin-top: 3%;
 }
 
@@ -1578,8 +1585,8 @@ footer h4 {
 .kurv-info {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 10%;
+    justify-content: space-between;
+
     width: 60%;
     margin: 5% 0 5% 5%;
 }
@@ -1647,7 +1654,51 @@ footer h4 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* Dropdown menu til antal - slut */
 
+#kurv-slut {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60%;
+}
+
+#kurv-slut .levering {
+    color: var(--brown);
+    font-size: 15px;
+    font-family: "Krub", sans-serif;
+}
+
+.endelig-pris {
+    color: var(--brown);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 29%;
+    font-size: 20px;
+    font-family: "Krub", sans-serif;
+}
+
+#betal {
+    border: var(--blue) solid 5px;
+    color: var(--blue);
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    background-color: var(--bluefaded);
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 275px;
+    font-family: "futura";
+    text-align: center;
+    margin: 5% 5% 1% 5%;
+}
+
+#shop-videre {
+    color: var(--brown);
+    text-decoration: underline;
+    font-family: "Krub", sans-serif;
+}
 
 
 /***********************************************************************************************************/
@@ -1800,57 +1851,6 @@ color: #bbcae7;
     color: var(--bluefaded);
     cursor: pointer; 
     border: solid var(--bluefaded) 4px
-}
-
-
-
-
-/* Dropdown menu til antal - slut */
-
-
-#kurv-slut {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 55%;
-}
-
-#kurv-slut .levering {
-    color: var(--brown);
-    font-size: 15px;
-    font-family: "Krub", sans-serif;
-}
-
-.endelig-pris {
-    color: var(--brown);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 12%;
-    width: 100%;
-    font-size: 20px;
-    font-family: "Krub", sans-serif;
-}
-
-#betal {
-    border: var(--blue) solid 5px;
-    color: var(--blue);
-    border-radius: 25px;
-    padding: 10px 15px;
-    font-size: 1.5rem;
-    background-color: var(--bluefaded);
-    text-transform: uppercase;
-    cursor: pointer;
-    width: 275px;
-    font-family: "futura";
-    text-align: center;
-    margin: 5% 5% 1% 5%;
-}
-
-#shop-videre {
-    color: var(--brown);
-    text-decoration: underline;
-    font-family: "Krub", sans-serif;
 }
 
 /***********************************************************************************************************/

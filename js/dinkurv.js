@@ -46,7 +46,7 @@ window.onclick = function(event) {
             }
         }
     }
-}
+};
 
 // Fjern produkt fra listen
 document.getElementById('skjulKnap1').onclick = function() {

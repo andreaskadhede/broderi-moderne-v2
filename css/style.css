@@ -1496,41 +1496,16 @@ footer h4 {
 }
 
 
-
 /* .produkt:hover {
     transform: scale(1.05);
     transition: all 0.3s ease; 
-}
-.produkt-broderi2{
-    margin-left: 4%;
-    display: inline-flex;
-}
-.produkt-broderi2:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease; 
-}
+} */
 
-.produkt-broderi3{
-    margin-left: 15%;
-    margin-top: 4%;
-    display: inline-flex;
-}
-.produkt-broderi3:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease; 
-}
 
-.produkt-broderi{
-    margin-top: 2%;
-     margin-left: 15%;
-     display: inline-flex;
- }
- 
- .produkt-broderi2{
-     margin-left: 4%;
-     display: inline-flex;
- }
- 
+/************************************************** SHOP - DIN KURV *************************************************/
+.kurv-indhold
+
+
 /***********************************************************************************************************/
 /********************************************** SHOP - BRODERI *********************************************/
 /***********************************************************************************************************/
@@ -1547,9 +1522,14 @@ footer h4 {
 /************************************************** KURV ***************************************************/
 /***********************************************************************************************************/
 
-/***********************************************************************************************************/
-/************************************************** PURE MERINO ***************************************************/
-/***********************************************************************************************************/
+.kurv-indhold {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--brown);
+    font-family: "Krub", sans-serif;
+}
 
 .kurv-indhold {
     display: flex;
@@ -1574,6 +1554,7 @@ footer h4 {
     justify-content: flex-start;
     align-items: center;
     width: 60%;
+    margin-right: 6.5%;
     gap: 48%;
 }
 
@@ -1737,7 +1718,7 @@ color: #bbcae7;
 }
 
 .ordre-boelge{
-    margin-top: 15%;
+    margin-top: 5%;
     width: 100%;
     margin-bottom: 20%;
 }
@@ -1747,12 +1728,31 @@ color: #bbcae7;
     font-family: "Krub", sans-serif;
     font-weight: 100;
     font-size: 1rem;
+    margin-left: 45%;
+    margin-top: 5%;
+    cursor: pointer;
+    color: #b38c72;
+}
+
+.ordrep3{
     text-align: center;
-    margin-top: 2%;
+    text-decoration: underline;
+    font-family: "Krub", sans-serif;
+    font-weight: 100;
+    font-size: 20rem;
+    margin-top: 50%;
 }
 
 
+/***********************************************************************************************************/
+/************************************************** Produktbeskrivelse *************************************/
+/***********************************************************************************************************/
 
+.kurv-billede{
+    width: 55%;
+    margin-left: 20%;
+    margin-top: 6%;
+}
 
 
 

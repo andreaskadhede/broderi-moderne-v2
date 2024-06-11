@@ -40,23 +40,38 @@ function removeFromCart(index) {
 }
 
 function displayCart() {
-    // ændre kurvensindhold ved tilføjelse af ting
     const cartItemsContainer = document.getElementById('cart-items');
     cartItemsContainer.innerHTML = '';
 
     cart.forEach((item, index) => {
-        const listItem = document.createElement('li'); // tilgøjer et li i DOM
-        listItem.textContent = `${item.name} - ${item.price.toFixed(2)} DKK x ${item.quantity}`; // formattet af hvad der står i linjerne i kurven
-        const removeButton = document.createElement('button'); // tilføjer en "fjern" knap
-        removeButton.textContent = 'Remove';
-        removeButton.onclick = () => removeFromCart(index); // kalder på funktion ved click
+        const listItem = document.createElement('li'); // Create a list item element
+        
+        // Create the first paragraph
+        const firstParagraph = document.createElement('p');
+        firstParagraph.textContent = `${item.name}`;
+
+        // Create the second paragraph
+        const secondParagraph = document.createElement('p');
+        secondParagraph.textContent = `${item.price.toFixed(2)} DKK X ${item.quantity}`;
+
+        // Create the remove button
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Fjern';
+        removeButton.onclick = () => removeFromCart(index); // Attach the remove function
+
+        // Append the paragraphs and remove button to the list item
+        listItem.appendChild(firstParagraph);
+        listItem.appendChild(secondParagraph);
         listItem.appendChild(removeButton);
+
+        // Append the list item to the container
         cartItemsContainer.appendChild(listItem);
     });
 
     const cartTotalContainer = document.getElementById('cart-total');
-    cartTotalContainer.textContent = cartTotal.toFixed(2); // formattet af hvad der står i linjerne i kurven
+    cartTotalContainer.textContent = cartTotal.toFixed(2); // Update the total price
 }
+
 
 function updateCartCount() {
     // funktion til ændring at nummeret ved kurv-ikonet

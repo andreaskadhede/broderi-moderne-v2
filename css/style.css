@@ -1388,7 +1388,6 @@ footer h4 {
     margin-left: -40px;
 }
 
-
 .se-alt {
     border: var(--blue) solid 5px;
     color: var(--blue);
@@ -1398,15 +1397,19 @@ footer h4 {
     width: 220px;
 }
 
+
+
 #cart-popup {
     position: fixed;
     right: 20px;
-    top: 60px;
-    width: 300px;
-    background: white;
-    border: 1px solid #ddd;
-    padding: 1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 100px;
+    width: 400px;
+    background: var(--background);
+    border: 5px solid var(--blue);
+    padding: 1.25rem;
+    text-align: left;
+    border-radius: 25px;
+    z-index: 7;
 }
 
 #cart-popup.hidden {
@@ -1416,28 +1419,40 @@ footer h4 {
 #cart-popup ul {
     list-style: none;
     padding: 0;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    color: var(--brown);
 }
 
 #cart-popup li {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0.5em 0;
+    justify-content: left;
+    margin: 15px 0;
+    gap: 25px;
+}
+
+
+#cart-popup #total {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+#cart-popup li p {
+    justify-self: flex-end;
+    width: 150px;
 }
 
 #cart-popup li button {
-    background-color: #dc3545;
-    color: white;
+    font-size: 0.8rem;
+    text-decoration: underline;
     border: none;
-    padding: 0.2em 0.5em;
+    background-color: transparent;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    color: var(--brown);
     cursor: pointer;
 }
-
-#cart-popup li button:hover {
-    background-color: #c82333;
-}
-
-
 
 /************************************************** SHOP - BRODERI *************************************************/
 

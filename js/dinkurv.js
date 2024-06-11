@@ -1,6 +1,19 @@
-"use strict"
+"use strict";
 
 document.addEventListener("DOMContentLoaded", function() {
+
+    const prisPerStk1 = 13;
+    const prisPerStk2 = 199;
+    const prisPerStk3 = 54;
+
+    function selectOption(quantity, pricePerUnit, totalPriceId, dropdownButtonId, dropdownContentId) {
+        const totalPriceElement = document.getElementById(totalPriceId);
+        const totalPrice = quantity * pricePerUnit;
+        totalPriceElement.textContent = `${totalPrice} DKK`;
+        document.getElementById(dropdownButtonId).textContent = `${quantity} stk.`;
+        document.getElementById(dropdownContentId).style.display = "none";
+        updateTotalPrice();
+    }
 
     function updateTotalPrice() {
         const totalPrice1 = parseInt(document.getElementById('total-price1').textContent) || 0;
@@ -51,5 +64,4 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('skjulKnap3').onclick = function() {
         document.getElementById('produkt3').style.display = 'none';
     };
-
 });

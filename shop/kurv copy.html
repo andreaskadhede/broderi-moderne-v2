@@ -60,7 +60,7 @@
         <!-- main start -->
         <!-- <script src="/js/kurv.js"></script> -->
 
-        <!-- <main class="bla">
+        <main class="bla">
             <h1>Din kurv</h1>
             <div class="kurv-indhold">
                 <div class="kurv-titler">
@@ -71,14 +71,14 @@
                 </div>
                 <div class="kurv-produkt" id="produkt1">
                     <div>
-                        <img class="kurv-img" src="/img/produkter/flora-8871.webp" alt="Flora Wool broderigarn i farven grøn(8871)">
+                        <img class="kurv-img billede-produkt" src="/img/produkter/flora-8871.webp" alt="Flora Wool broderigarn i farven grøn(8871)">
                         <div class="kurv-tekst">
-                            <p>Flora Wool • Fru Zippe</p>
+                            <p class="navn-produkt">Flora Wool • Fru Zippe</p>
                             <button id="skjulKnap1">Fjern fra kurv</button>
                         </div>
                     </div>
                     
-                    <p id="pris-per-stk1">13 DKK</p>
+                    <p class="pris-per-stk" id="pris-per-stk1">13 DKK</p>
                     
                     <div class="dropdown">
                         <button class="dropbtn" id="dropdownButton1">Vælg antal</button>
@@ -143,29 +143,27 @@
                 </div>
 
                 <ul id="cart-items"></ul>
-                <p id="total">Total: <span id="cart-total">0.00</span> DKK</p>
 
 
             <div id="kurv-slut">
                 <div class="endelig-pris">
                 <p>Total:</p>
+                <p id="ialtpris"> 0 DKK</p>
                 <p><span id="cart-total">0.00</span> DKK</p>
                 </div>
                 <p class="levering">Levering beregnes ved betaling</p>
             </div>
             <a id="betal" href="ordrebekraefelse.html">Gå til betaling</a>
             <a id="shop-videre" href="shop.html">Shop videre</a>
-        </main> -->
-        <!-- main slut -->
+        </main>
         
-        <main class="bla">
-            <h1>Din kurv</h1>
-            <div class="kurv-indhold" id="cart-items">
+            <!-- <h1>Din kurv</h1>
+            <div class="kurv-indhold" id="cart-items"> -->
                 <!-- Your existing HTML for static cart items -->
                 <!-- JavaScript will generate and append dynamic cart items here -->
-            </div>
+            <!-- </div> -->
             <!-- Total price and checkout buttons -->
-            <div id="kurv-slut">
+            <!-- <div id="kurv-slut">
                 <div class="endelig-pris">
                     <p>Total:</p>
                     <p><span id="cart-total">0.00</span> DKK</p>
@@ -173,7 +171,7 @@
                 <p class="levering">Levering beregnes ved betaling</p>
             </div>
             <a id="betal" href="ordrebekraefelse.html">Gå til betaling</a>
-            <a id="shop-videre" href="shop.html">Shop videre</a>
+            <a id="shop-videre" href="shop.html">Shop videre</a> -->
         </main>
         
         
@@ -230,8 +228,8 @@
             </div>
         </footer>
         <!-- footer slut -->
-        <!-- <script src="/js/dinkurv.js"></script> -->
-        <script src="/js/dinkurv copy.js"></script>
+        <script src="/js/dinkurv.js"></script>
+        <!-- <script src="/js/dinkurv copy.js"></script> -->
         <script>
             // Load cart data when the cart page loads
             loadCartFromLocalStorage();

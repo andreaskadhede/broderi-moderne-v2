@@ -83,16 +83,37 @@ function updateCartCount() {
 
 
 function toggleCart() {
-    // Viser pop-up kurven ved at trykke på ikonet
     const cartPopup = document.getElementById('cart-popup');
+    const isCartVisible = !cartPopup.classList.contains('hidden');
+
+    // Toggle visibility of cart
     cartPopup.classList.toggle('hidden');
-    if (!cartPopup.classList.contains('hidden')) {
-        loadCartFromLocalStorage(); // Load cart from localStorage when shown
+
+    // Function to close cart when mouse leaves it
+    function closeCartOnMouseLeave(event) {
+        if (!cartPopup.contains(event.relatedTarget) && event.relatedTarget.id !== 'cart-toggle-button') {
+            cartPopup.classList.add('hidden');
+            cartPopup.removeEventListener('mouseleave', closeCartOnMouseLeave);
+        }
+    }
+
+    if (!isCartVisible) {
+        // Load cart from localStorage when shown
+        loadCartFromLocalStorage();
+        // If cart is visible, add event listener to close it when mouse leaves it
+        cartPopup.addEventListener('mouseleave', closeCartOnMouseLeave);
     } else {
-        const cartItemsContainer = document.getElementById('cart-items');
-        cartItemsContainer.innerHTML = ''; // Clear cart items when hidden
+        // Remove event listener when cart is hidden
+        cartPopup.removeEventListener('mouseleave', closeCartOnMouseLeave);
     }
 }
+
+
+
+
+
+
+
 
 const cartIcon = document.getElementById('cart-icon');
 cartIcon.addEventListener('mouseover', toggleCart);
@@ -125,3 +146,32 @@ function loadCartFromLocalStorage() {
 window.onload = function() {
     loadCartFromLocalStorage();
 };
+
+
+
+
+
+// Antal af varer
+
+document.getElementById('minus-knap').addEventListener('click', function() {
+    let antal = document.getElementById('antal');
+    let currentValue = parseInt(antal.value, 10);
+    if (!isNaN(currentValue) && currentValue > 1) {
+        antal.value = currentValue - 1;
+    }
+});
+
+document.getElementById('plus-knap').addEventListener('click', function() {
+    let antal = document.getElementById('antal');
+    let currentValue = parseInt(antal.value, 10);
+    if (!isNaN(currentValue)) {
+        antal.value = currentValue + 1;
+    }
+});
+
+const produktKurv = document.getElementById("tilfoej-kurv");
+const pris = parseFloat(document.getElementById("pris-produkt").textContent);
+const navn = document.getElementById("navn-produkt").textContent;
+produktKurv.addEventListener("click", function() {
+    addToCart(navn, pris);
+});

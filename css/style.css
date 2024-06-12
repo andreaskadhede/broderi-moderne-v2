@@ -1760,36 +1760,12 @@ footer h4 {
 /************************************************** ORDREBEKRÆFTELSE ***************************************/
 /***********************************************************************************************************/
 
-.ordreh1{
-    color: #bbcae7;
-}
-
-.ordreh2{
-color: #bbcae7;
-}
-
 .ordrep{
     font-family: "Krub", sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
     text-align: center;
-}
-
-.ordre-boelge{
-    margin-top: 5%;
-    width: 100%;
-    margin-bottom: 20%;
-}
-
-.ordrep2{
-    text-decoration: underline;
-    font-family: "Krub", sans-serif;
-    font-weight: 100;
-    font-size: 1rem;
-    margin-left: 45%;
-    margin-top: 5%;
-    cursor: pointer;
-    color: #b38c72;
+    color: var(--brown);
 }
 
 .ordrep3{
@@ -1799,6 +1775,10 @@ color: #bbcae7;
     font-weight: 100;
     font-size: 20rem;
     margin-top: 50%;
+}
+
+.ordre-levering {
+    font-size: 15px;
 }
 
 

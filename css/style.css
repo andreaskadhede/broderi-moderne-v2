@@ -1783,12 +1783,12 @@ footer h4 {
 
 
 /***********************************************************************************************************/
-/************************************************** Produktbeskrivelse *************************************/
+/************************************************** PRODUKTSIDE *************************************/
 /***********************************************************************************************************/
 
 .produkt-venstre,
 .produkt-hoejre {
-    flex: 1; /* Sørger for at begge sektioner fylder lige meget plads */
+    flex: 1; 
 }
 
 .produkt-hoejre {
@@ -1827,7 +1827,7 @@ footer h4 {
 
 .produkt-lillebilleder {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Reducer kolonner til 3 for mindre billeder */
+    grid-template-columns: repeat(6, 1fr);
     gap: 5px;
     margin-top: 10px;
 }
@@ -1924,8 +1924,8 @@ footer h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Skjuler overlay som standard */
-    transition: opacity 0.3s ease; /* Glidende overgang */
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
     text-align: center;
 }
 

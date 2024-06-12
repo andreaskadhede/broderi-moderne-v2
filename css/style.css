@@ -324,6 +324,15 @@ header {
     z-index: 10;  
 }
 
+.forside-shop {
+    width: 30vw;
+    height: 25vh;
+    position: absolute;
+    right: 0;
+    top: 40vh;
+    z-index: 10;  
+}
+
 /****************************************** BRODERI/HÆKLING/STRIK ********************************************/
 .gron {
     display: flex;
@@ -1467,14 +1476,10 @@ footer h4 {
     color: var(--brown);
     font-size: 1.5rem;
     align-self: flex-start;
-
-
-}
-
-.filter-boks {
     width: 150px;
     border-radius: 25px;
     margin: 0 0 15px 100px;
+    cursor: pointer;
 }
 
 #muligheder {
@@ -1483,8 +1488,8 @@ footer h4 {
     padding: 0 10px 5px;
     margin-left: -10px;
     font-size: 1.25rem;
-    border: var(--blue) 5px solid;
     border-radius: 25px;
+    display: none;
 }
 
 #muligheder li {
@@ -1507,11 +1512,6 @@ footer h4 {
     transform: scale(1.05);
     transition: all 0.3s ease; 
 } */
-
-
-/************************************************** SHOP - DIN KURV *************************************************/
-.kurv-indhold
-
 
 /***********************************************************************************************************/
 /********************************************** SHOP - BRODERI *********************************************/
@@ -1542,48 +1542,97 @@ footer h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 60vw;
 }
 
 .kurv-produkt p {
     color: var(--brown);
     font-family: "Krub", sans-serif;
+    font-size: 14px;
 }
 
-.kurv-titler p {
-    color: var(--brown);
-    font-family: "Krub", sans-serif; 
-}
 
-.kurv-titler1 {
+/* .kurv-titler1 {
     font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 60%;
-    margin-right: 6.5%;
+    width: 100%;
     gap: 48%;
 }
 
-.kurv-titler2 {
+.kurv-titler1:first-child {
+    width: 70%;
+} */
+
+.kurv-titler {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 5%;
+}
+
+.kurv-titler p {
+    width: 15%;
+    color: var(--brown);
+    font-family: "Krub", sans-serif; 
+}
+
+.kurv-titler p:first-child {
+    width: 40%;
+}
+
+.kurv-titler p:last-child {
+    text-align: end;
+}
+
+/* .kurv-titler2 {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     gap: 20%;
-}
+} */
 
 .kurv-produkt {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
+    gap: 5%;
     margin-top: 3%;
+}
+
+.kurv-produkt div, .kurv-produkt p  {
+    width: 15%;
+}
+
+.kurv-produkt div:first-child {
+    width: 40%;
+    display: flex;
+    gap: 7%;
+    align-items: center;
+}
+
+.kurv-produkt p:last-child{
+    text-align: end;
+}
+
+.kurv-produkt div:first-child div {
+    width: 80%;
+}
+
+.kurv-tekst p {
+    width: 100%;
 }
 
 .kurv-img {
     border-radius: 50%;
-    width: 10%;
+    width: 30%;
+    height: auto;
 }
 
 .kurv-info {
@@ -1604,10 +1653,10 @@ footer h4 {
     width: 60%;
 }
 
-.kurv-tekst {
+/* .kurv-tekst {
     display: flex;
     flex-direction: column;
-}
+} */
 
 #skjulKnap1, #skjulKnap2, #skjulKnap3 {
     color: var(--brown);
@@ -1630,7 +1679,7 @@ footer h4 {
     color: var(--brown);
     background-color: var(--background);
     padding: 1px;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     cursor: pointer;
     font-family: "Krub", sans-serif;
@@ -1646,9 +1695,10 @@ footer h4 {
 
 .dropdown-content a {
     color: var(--brown);
-    padding: 12px 16px;
+    padding: 10px 14px;
     text-decoration: none;
     display: block;
+    font-size: 12px;
 }
 
 .dropdown-content a:hover {
@@ -1664,13 +1714,14 @@ footer h4 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 60%;
+    width: 100%;
 }
 
 #kurv-slut .levering {
     color: var(--brown);
     font-size: 15px;
     font-family: "Krub", sans-serif;
+    width: 220px;
 }
 
 .endelig-pris {
@@ -1678,7 +1729,7 @@ footer h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 29%;
+    width: 220px;
     font-size: 20px;
     font-family: "Krub", sans-serif;
 }
@@ -1755,51 +1806,43 @@ color: #bbcae7;
 /************************************************** PRODUKTSIDE *************************************/
 /***********************************************************************************************************/
 
-.kurv-billede{
-    width: 55%;
-    margin-left: 20%;
-    margin-top: 6%;
-}
-
-
-
-
-.produkt-hoejre {
-    width: 90%;
-    font-size: 1rem;
-}
 .produkt-venstre,
 .produkt-hoejre {
     flex: 1; 
 }
 
 .produkt-hoejre {
+    font-size: 1rem;
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .produkt-hoejre h3,
-.produkt-hoejre p{
-    text-align: start;
+.produkt-hoejre p, .produkt-farve{
     font-family: "Krub", sans-serif;
     color: var(--brown);
     font-weight: 400;
 }
 
-.produkt-hoejre h3 {
-    font-size: 2rem;
-    font-weight: 500;
+.produkt-farve {
     margin-bottom: 20px;
+}
+
+.produkt-hoejre h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .produkt-hoejre p{
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
-.produkt-storbillede img {
-    width: 40vw;
+.produkt-storbillede img, .produkt-lillebilleder img {
+    width: 100%;
     height: auto;
-    display: block;
 }
 
 .produkt-lillebilleder {
@@ -1809,61 +1852,30 @@ color: #bbcae7;
     margin-top: 10px;
 }
 
-.lillebillede {
-    border-radius: 3px;
+#storbillede, .lillebillede {
+    border-radius: 5px;
 }
 
-#storbillede {
-    border-radius: 3px;
-}
-
-.produkt-lillebilleder img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.produkt-hoejre {
-    display: flex;
-    flex-direction: column;
-}
-
-.produkt-filter {
-    font-size: 1.2rem;
-    font-family: "Krub", sans-serif;
-    color: var(--brown);
-    font-weight: 600;
-}
-
-#map {
-    width: 100%;
-    height: 300px; 
-}
-
-/*tilføj til kurv*/
 .produkt-antal {
     display: flex;
     align-items: center;
-    margin-top: 20px;
-
-}
-
-.produkt-antal button, .produkt-antal input {
-    font-size: 24px;
-    margin: 0 6px;
+    gap: 15px;
 }
 
 .produkt-antal button{
     font-family: "futura";
     text-transform: uppercase;
     border-radius: 25px;
-    border: solid var(--blue) 4px;
+    border: solid var(--blue) 3px;
     color: var(--blue);
     background-color: var(--bluefaded);
+    height: 39.5px;
+    font-size: 18px;
+
 }
 
 .produkt-antal input {
-    width: 40px;
+    width: 45px;
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
@@ -1874,17 +1886,20 @@ color: #bbcae7;
 }
 
 #minus-knap {
-    font-size: 26px;
-    padding-left: 15px;
-    padding-top: 2px;
-    padding-right: 15px;
+    font-size: 36px;
+    width: 39.5px;
+    height: 39.5px;
+    text-align: center;
+    padding-bottom: 15px;
+    line-height: 26px;
 }
 
 #plus-knap {
     font-size: 26px;
-    padding-left: 10px;
-    padding-top: 2px;
-    padding-right: 10px;
+    width: 39.5px;
+    height: 39.5px;
+    text-align: center;
+
 }
 
 .tilfoej-kurv {
@@ -1904,7 +1919,7 @@ color: #bbcae7;
     background-color: var(--blue);
     color: var(--bluefaded);
     cursor: pointer; 
-    border: solid var(--bluefaded) 4px
+    border: solid var(--bluefaded) 3px
 }
 
 /*wrapper*/
@@ -1924,8 +1939,8 @@ color: #bbcae7;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: var(--bluefaded); 
+    background-color: var(--brown);
+    color: var(--background); /* Tekstfarve */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1935,44 +1950,10 @@ color: #bbcae7;
 }
 
 .lillebillede-wrapper:hover .lillebillede-overlay {
-    opacity: 1; /* Viser overlay ved hover */
+    opacity: 0.7; /* Viser overlay ved hover */
 }
 
 
-/*farvefilter dropdown*/
-
-.farve-dropdown {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0;
-    top: calc(100% + 10px); /* Afstanden mellem Farve-filter og farve-dropdown */
-}
-
-.farve-dropdown a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.farve-dropdown a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown-pil {
-    font-size: 12px;
-    margin-left: 5px;
-}
-
-
-
-
-
-/* Dropdown menu til antal - slut */
 /***********************************************************************************************************/
 /***********************************************************************************************************/
 /************************************************** @MEDIA *************************************************/
@@ -2125,16 +2106,16 @@ color: #bbcae7;
         width: 100vw;
         height: 13vh;
         left: 0;
-        top: 43vh;
+        top: 31vh;
     }
     
 
     .forside-broderi {
         width: 100vw;
-        height: 13vh;
+        height: 12vh;
         right: 0;
-        top: 55vh;
-        }
+        top: 44vh;
+    }
     
 
     .forside-kontakt {
@@ -2142,14 +2123,22 @@ color: #bbcae7;
         height: 15vh;
         right: 0vw;
         top: 70vh;
-        }
+    }
         
     .forside-omos {
         width: 50vw;
         height: 15vh;
         right: 50vw;
         top: 70vh;
-        }
+    }
+
+    .forside-shop {
+        width: 100vw;
+        height: 12vh;
+        right: 0vh;
+        top: 56vh;
+    }
+    
 
 
     /****************************************** BRODERI/HÆKLING/STRIK ******************************************/

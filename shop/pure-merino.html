@@ -35,24 +35,26 @@
         <script src="/js/navbar.js"></script>
         <header>
             <!-- logo i navbar -->
-            <a href="index.html" class="logo"><img id="logo-nav" src="/img/logo.webp" alt="logo"></a>
+            <a href="/index.html" class="logo"><img id="logo-nav" src="/img/logo.webp" alt="logo"></a>
 
             <!-- burgerbar start -->
             <nav>
+
+                <a id="cart-icon" class="kurv" href="kurv copy.html"><img src="/img/ikoner/kurv.webp" alt="kurv ikon"><span id="cart-count">0</span></a>
 
                 <div id="burger-menu">
                     <span id="span"></span>
                 </div>
 
                 <ul class="menu" id="menu">
-                    <li><a href="index.html">Forside</a></li>
-                    <li><a href="broderi.html">Broderi</a></li>
-                    <li><a href="haekling.html">Hækling</a></li>
-                    <li><a href="strik.html">Strik</a></li>
-                    <li><a href="om.html">Om os</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="shop/shop.html">Shop</a></li>
-                    <li><a href="monstermaskine.html">Mønstermaskine</a></li>
+                    <li><a href="/index.html">Forside</a></li>
+                    <li><a href="/broderi.html">Broderi</a></li>
+                    <li><a href="/haekling.html">Hækling</a></li>
+                    <li><a href="/strik.html">Strik</a></li>
+                    <li><a href="/om.html">Om os</a></li>
+                    <li><a href="/kontakt.html">Kontakt</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="/monstermaskine.html">Mønstermaskine</a></li>
                     <li><img class="logo-menu" src="/img/logo.webp" alt="logo"></li>
                 </ul>
                 
@@ -72,32 +74,32 @@
                     <div class="produkt-lillebilleder">
                         <div class="lillebillede-wrapper">
                             <img id="betteryarn-0001" class="lillebillede" src="/img/produkter/betteryarn-0001.webp" alt="garn">
-                            <div class="lillebillede-overlay">Beige</div>
+                            <div class="lillebillede-overlay">Off White</div>
                         </div>
 
                         <div class="lillebillede-wrapper">
                             <img id="betteryarn-0005" class="lillebillede" src="/img/produkter/betteryarn-0005.webp" alt="garn">
-                            <div class="lillebillede-overlay">Lyserød</div>
+                            <div class="lillebillede-overlay">Baby Pink</div>
                         </div>
 
                         <div class="lillebillede-wrapper">
                             <img id="betteryarn-0007" class="lillebillede" src="/img/produkter/betteryarn-0007.webp" alt="garn">
-                            <div class="lillebillede-overlay">Blå</div>
+                            <div class="lillebillede-overlay">Baby Blue</div>
                         </div>
 
                         <div class="lillebillede-wrapper">
                             <img id="betteryarn-1133" class="lillebillede" src="/img/produkter/betteryarn-1133.webp" alt="garn">
-                            <div class="lillebillede-overlay">Gul</div>
+                            <div class="lillebillede-overlay">Mustard Gold</div>
                         </div>
 
                         <div class="lillebillede-wrapper">
                             <img id="betteryarn-4007" class="lillebillede" src="/img/produkter/betteryarn-4007.webp" alt="garn">
-                            <div class="lillebillede-overlay">Grå</div>
+                            <div class="lillebillede-overlay">Navy Night</div>
                         </div>
 
                         <div class="lillebillede-wrapper">
                             <img id="betteryarn-4906" class="lillebillede" src="/img/produkter/betteryarn-4906.webp" alt="garn">
-                            <div class="lillebillede-overlay">Grøn</div>
+                            <div class="lillebillede-overlay">Green Gables</div>
                         </div>
 
                         </div>
@@ -107,7 +109,7 @@
 
                 <!-- kort -->
                 <div class="produkt-hoejre">
-                    <h3>Pure Merino No.4</h3>
+                    <h3 id="navn-produkt">Pure Merino No.4</h3>
                     <p>Denne 100% Extra Fine Mulesing-free Merino Wool har en udsøgte blødhed, der gør det muligt at bære direkte mod huden.</p>
                     <p>Det er ideelt til den nyfødte baby, men også for den kvalitetsbevidste strikker, der søger hverdagsluksus med god samvittighed og ønsker et liv uden kemi.</p>
                     <p>Løbelægnde: 50 gram, ca 180 m</p>
@@ -122,21 +124,24 @@
                         Farve: <span id="farve-beskrivelse">Beige hvid - 0001</span>
                     </div>
 
-
-                    <br>
-                    <h3>79 DKK</h3>
+                    <h3 id="pris-produkt">79 DKK</h3>
                     
                     <div class="produkt-antal">
                         <button id="minus-knap">-</button>
                         <input type="text" id="antal" value="1">
-                        <button id="plus-knap"> + </button>
-                        <button class="tilfoej-kurv">Tilføj til kurv</button>
+                        <button id="plus-knap">+</button>
+                        <button id="tilfoej-kurv" class="tilfoej-kurv">Tilføj til kurv</button>
                     </div>
 
                 </div>
             </div>
 
-
+            <div id="cart-popup" class="hidden">
+                <h2>Din kurv</h2>
+                <ul id="cart-items"></ul>
+                <p id="total">Total: <span id="cart-total">0.00</span> DKK</p>
+                <!-- cart-total viser det antal varer der er i kurven -->
+            </div>
            
         </main>
         <!-- main slut -->

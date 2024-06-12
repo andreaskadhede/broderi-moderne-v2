@@ -2637,18 +2637,26 @@ footer h4 {
     }
 
     .produkt-venstre{
-        width: 80%;
+        width: 85%;
     }
 
     .produkt-hoejre {
         
-        width: 80%;
+        width: 85%;
         flex-direction: column;
         
     }
 
     .produkt-hoejre h3{
         margin-top: 2vh;
+    }
+
+    .produkt-hoejre h3 {
+        font-size: 25px;
+    }
+
+    .produkt-hoejre p {
+        font-size: 16px;
     }
 
     .beskrivelse-sektion1 {

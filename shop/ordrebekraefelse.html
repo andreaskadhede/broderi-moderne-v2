@@ -59,20 +59,87 @@
         <!-- burgerbar slut -->
     </header>
 
-    <h1 class="ordreh1">ORDREBEKRÆFTELSE</h1>
+    <main class="bla">
+        <h1 class="ordreh1">Ordrebekræftelse</h1>
 
-    <h2 class="ordreh2">TAK FORDI DU HANDLEDE HOS OS</h2>
+        <h2 class="ordreh2">Tak fordi du handlede hos os</h2>
+    
+        <p class="ordrep">Din ordre er nu modtaget og vi vil behandle den snarest muligt.</p>
+        <p class="ordrep">Du vil modtage en mail med din faktura.</p>
+    
+        <div class="boelge"></div>
 
-    <p class="ordrep">Din ordre er nu modtaget og vi vil behandle den snarest muligt. <br> Du vil modtage en mail med din faktura. </p> <br>
+    
+        <div class="kurv-indhold">
+            <div class="kurv-titler">
+                <p>Produkt</p>
+                <p>Pris pr. stk.</p>
+                <p>Antal</p>
+                <p>I alt</p>
+            </div>
+            <div class="kurv-produkt" id="produkt1">
+                <div>
+                    <img class="kurv-img" src="/img/produkter/flora-8871.webp" alt="Flora Wool broderigarn i farven grøn(8871)">
+                    <div class="kurv-tekst">
+                        <p>Flora Wool • Fru Zippe</p>
+                        <button id="skjulKnap1">Fjern fra kurv</button>
+                    </div>
+                </div>
+                <p id="pris-per-stk1">13 DKK</p>
+                <div class="dropdown">
+                    <button class="dropbtn" id="dropdownButton1">3 stk.</button>
+                </div>
+                <p id="total-price1">39 DKK</p>
+            </div>
 
 
-    <img class="kurv-billede" src="/img/kurv.png" alt="">
+            <div class="kurv-produkt" id="produkt2">
+                <div>
+                    <img class="kurv-img" src="/img/kits/kit-blomst-bi.webp" alt="Broderi kit med blomster of bier fra Broderi Moderne">
+                    <div class="kurv-tekst">
+                        <p>Broderi Kit • Blomster & Bier</p>
+                        <button id="skjulKnap2">Fjern fra kurv</button>
+                    </div>
+                </div>
+                <p id="pris-per-stk2">199 DKK</p>
+                <div class="dropdown">
+                    <button class="dropbtn" id="dropdownButton2">1 stk.</button>
+                </div>
+                <p id="total-price2">199 DKK</p>
+            </div>
 
-    <a href="shop.html"><p class="ordrep2">Tilbage til shoppen</p></a>
+            <div class="kurv-produkt" id="produkt3">
+                <div>
+                    <img class="kurv-img" src="/img/produkter/chenille-nal.webp" alt="Broderi nål af Merchant & Mills, i typen Chenille">
+                    <div class="kurv-tekst">
+                        <p>Broderinåle • Merchant & Mills</p>
+                        <button id="skjulKnap3">Fjern fra kurv</button>
+                    </div>
+                </div>
+                <p id="pris-per-stk3">54 DKK</p>
+                <div class="dropdown">
+                    <button class="dropbtn" id="dropdownButton3">1 stk.</button>
+                </div>
+                <p id="total-price3">54 DKK</p>
+            </div>
+
+            <div id="kurv-slut">
+                <div class="endelig-pris">
+                    <p class="ordre-levering">Levering:</p>
+                    <p class="ordre-levering">49 DKK</p>
+                </div>
+                <div class="endelig-pris">
+                    <p>Total:</p>
+                    <p id="ialtpris">341 DKK</p>
+                </div>
+            </div>
+            <a id="shop-videre" href="shop.html">Tilbage til shoppen</a>
+        </div>    
+    
+    
+        </main>
 
 
-
-    <img class="ordre-boelge" src="/img/moenster/boelge.webp" alt="">
     
    
         <!-- footer start -->

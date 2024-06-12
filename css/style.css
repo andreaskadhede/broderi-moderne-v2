@@ -1786,6 +1786,15 @@ footer h4 {
 /************************************************** PRODUKTSIDE *************************************/
 /***********************************************************************************************************/
 
+.blaprodukt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: var(--blue);
+}
+
 .produkt-venstre,
 .produkt-hoejre {
     flex: 1; 
@@ -2648,6 +2657,54 @@ footer h4 {
         transform: rotate(132deg);
         top: -10px;
         left: -355px;
+    }
+    /*********************************************** PRODUKTSIDE ************************************************/
+
+    .blaprodukt h1{
+        margin-top: 10vh;
+        font-size: 45px;
+    }
+
+    .produkt-venstre{
+        width: 85%;
+    }
+
+    .produkt-hoejre {
+        
+        width: 85%;
+        flex-direction: column;
+        
+    }
+
+    .produkt-hoejre h3{
+        margin-top: 2vh;
+    }
+
+    .produkt-hoejre h3 {
+        font-size: 25px;
+    }
+
+    .produkt-hoejre p {
+        font-size: 16px;
+    }
+
+    .beskrivelse-sektion1 {
+        order: 1;
+    }
+    .beskrivelse-sektion4 {
+        order: 4;
+        margin-top: 5vh;
+    }
+    .beskrivelse-sektion2 {
+        order: 2;
+    }
+    .beskrivelse-sektion3 {
+        order: 3;
+    }
+    
+    .produkt-antal button {
+        
+        font-size: 14px;
     }
 
     /************************************************** FOOTER *************************************************/

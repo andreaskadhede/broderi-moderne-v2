@@ -12,13 +12,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let index = 0;
         const itemWidth = 305; // Fixed width for each item
-        const itemsToShow = 3;
+        let itemsToShow = 3; // Default number of items to show
         const totalItems = karruselItems.length;
 
         function updatekarrusel() {
             const offset = index * -itemWidth;
             karrusel.style.transform = `translateX(${offset}px)`;
         }
+
+        function adjustForViewport() {
+            const viewportWidth = window.innerWidth;
+
+            if (viewportWidth <= 820) {
+                itemsToShow = 1; // Show 1 item on small screens
+            } else if (viewportWidth <= 1040) {
+                itemsToShow = 2; // Show 2 items on medium screens
+            } else {
+                itemsToShow = 3; // Show 3 items on larger screens
+            }
+
+            updatekarrusel();
+        }
+
+        window.addEventListener('resize', adjustForViewport);
+        adjustForViewport(); // Initial adjustment
 
         prevButton.addEventListener('click', () => {
             if (index > 0) {

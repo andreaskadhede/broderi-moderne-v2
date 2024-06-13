@@ -8,49 +8,104 @@
 
 
 <url>
-  <loc>https://broderi-moderne.andreaskadhede.dk/</loc>
-  <lastmod>2024-05-22T12:20:17+00:00</lastmod>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/</loc>
+  <lastmod>2024-06-13T09:21:29+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://broderi-moderne.andreaskadhede.dk/index.html</loc>
-  <lastmod>2024-05-22T12:20:17+00:00</lastmod>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/index.html</loc>
+  <lastmod>2024-06-13T09:21:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://broderi-moderne.andreaskadhede.dk/strik.html</loc>
-  <lastmod>2024-05-22T12:23:38+00:00</lastmod>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/strik.html</loc>
+  <lastmod>2024-06-13T09:21:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://broderi-moderne.andreaskadhede.dk/haekling.html</loc>
-  <lastmod>2024-05-22T12:20:16+00:00</lastmod>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/haekling.html</loc>
+  <lastmod>2024-06-13T09:21:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://broderi-moderne.andreaskadhede.dk/broderi.html</loc>
-  <lastmod>2024-05-22T12:20:16+00:00</lastmod>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/broderi.html</loc>
+  <lastmod>2024-06-13T09:21:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://broderi-moderne.andreaskadhede.dk/kontakt.html</loc>
-  <lastmod>2024-05-22T12:20:16+00:00</lastmod>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/kontakt.html</loc>
+  <lastmod>2024-06-13T09:21:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://broderi-moderne.andreaskadhede.dk/om.html</loc>
-  <lastmod>2024-05-22T12:23:34+00:00</lastmod>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/om.html</loc>
+  <lastmod>2024-06-13T09:21:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://broderi-moderne.andreaskadhede.dk/monstermaskine.html</loc>
-  <lastmod>2024-05-22T12:20:16+00:00</lastmod>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/shop/shop.html</loc>
+  <lastmod>2024-06-13T09:21:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/monstermaskine.html</loc>
+  <lastmod>2024-06-13T09:21:29+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://broderi-moderne.andreaskadhede.dk/test.html</loc>
-  <lastmod>2024-05-22T12:20:20+00:00</lastmod>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/test.html</loc>
+  <lastmod>2024-06-13T09:21:29+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/shop/kurv.html</loc>
+  <lastmod>2024-06-13T09:21:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/shop/blomster-bier.html</loc>
+  <lastmod>2024-06-13T09:21:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/shop/broderi-nale.html</loc>
+  <lastmod>2024-06-13T09:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/shop/tom-produkt.html</loc>
+  <lastmod>2024-06-13T09:21:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/shop/flora-wool.html</loc>
+  <lastmod>2024-06-13T09:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/shop/shop-broderi.html</loc>
+  <lastmod>2024-06-13T09:21:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/shop/pure-merino.html</loc>
+  <lastmod>2024-06-13T09:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/shop/solsikke-bollehat.html</loc>
+  <lastmod>2024-06-13T09:21:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/shop/stribet-troeje.html</loc>
+  <lastmod>2024-06-13T09:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://broderi-moderne-v2.andreaskadhede.dk/shop/ordrebekraeftelse.html</loc>
+  <lastmod>2024-06-13T09:21:36+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 

@@ -63,6 +63,8 @@
         </header>
           
         <!-- main start -->
+        <script src="/js/kurv.js"></script>
+
         <main class="bla">
             <h1 id="shop-h1">Hov!</h1>
             <div class="top">
@@ -79,6 +81,13 @@
                     <p>Du kan kontakte os her:</p>
                     <p>info@broderimoderne.dk</p>
                     <p>+45 51 91 12 44</p>
+                </div>
+
+                <div id="cart-popup" class="hidden">
+                    <h2>Din kurv</h2>
+                    <ul id="cart-items"></ul>
+                    <p id="total">Total: <span id="cart-total">0.00</span> DKK</p>
+                    <!-- cart-total viser det antal varer der er i kurven -->
                 </div>
         </main>
         <!-- main slut -->
@@ -135,9 +144,6 @@
             </div>
         </footer>
         <!-- footer slut -->
-        <script src="/js/produkt.js"></script>
-        <script src="/js/kurv.js"></script>
-
 
     </body>
 </html>

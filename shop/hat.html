@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solsikke Bøllehat • Broderi Moderne</title>
+
+
+    <!-- bruges til kortet -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+
+    <!-- bruger til font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Kite+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/img/logo.webp">
+
+    <!-- meta/seo -->
+    <meta name="geo.region" content="DK-82">
+    <meta name="geo.placename" content="Midtjylland">
+    <meta name="geo.position" content="56.223769;10.123814">
+    <meta name="ICBM" content="56.223769, 10.123814">
+    <meta name="author" content="Andrea Skadhede, Karoline Eriksen, Katrine Emilie Klockmann & Silja Hansen">
+    <meta name="description" content="Solsikke Bøllehat - Hækle kit til nybegyndere.">
+    
+
+</head>
+    <body>
+        <script src="/js/burgermenu.js"></script>
+        <script src="/js/navbar.js"></script>
+        <header>
+            <!-- logo i navbar -->
+            <a href="/index.html" class="logo"><img id="logo-nav" src="/img/logo.webp" alt="logo"></a>
+
+            <!-- burgerbar start -->
+            <nav>
+
+                <a id="cart-icon" class="kurv" href="kurv copy.html"><img src="/img/ikoner/kurv.webp" alt="kurv ikon"><span id="cart-count">0</span></a>
+
+                <div id="burger-menu">
+                    <span id="span"></span>
+                </div>
+
+                <ul class="menu" id="menu">
+                    <li><a href="/index.html">Forside</a></li>
+                    <li><a href="/broderi.html">Broderi</a></li>
+                    <li><a href="/haekling.html">Hækling</a></li>
+                    <li><a href="/strik.html">Strik</a></li>
+                    <li><a href="/om.html">Om os</a></li>
+                    <li><a href="/kontakt.html">Kontakt</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="/monstermaskine.html">Mønstermaskine</a></li>
+                    <li><img class="logo-menu" src="/img/logo.webp" alt="logo"></li>
+                </ul>
+                
+            </nav>
+            <!-- burgerbar slut -->
+        </header>
+          
+        <!-- main start -->
+        <main class="bla">
+            <h1>Solsikke Bøllehat</h1>  
+            <div class="top">
+                <!-- kontakt formular -->
+            <div class="produkt-venstre">
+
+                    <div class="produkt-storbillede">
+                        <img id="storbillede" src="/img/kits/kit-haekle.webp" alt="Solsikke Bøllehat - Hæklekit">
+                    </div>
+                    <div class="produkt-lillebilleder">
+                        <div id="lillebillede-wrapper1" class="lillebillede-wrapper">
+                            <img id="blomstbi1" class="lillebillede" src="/img/kits/kit-haekle.webp" alt="Solsikke Bøllehat - Hæklekit forside">
+                            <div class="lillebillede-overlay">Forside</div>
+                        </div>
+
+                        <div id="lillebillede-wrapper2" class="lillebillede-wrapper">
+                            <img id="blomstbi2" class="lillebillede" src="/img/kits/haekle-kit-indhold.webp" alt="Solsikke Bøllehat - Hæklekit bagside">
+                            <div class="lillebillede-overlay">Bagside</div>
+                        </div>
+                    </div>
+
+            </div>
+
+             
+
+                <!-- kort -->
+            <div class="produkt-hoejre">
+                    <h3 id="navn-produkt">Solsikke Bøllehat • Hæklekit</h3>
+
+                <div class="beskrivelse-sektion1">
+                    <p>Hækle kittet Solsikke Bøllehat er perfekt til en der er ny til at hækle og indeholder alt det du skal bruge for at komme sikkert igennem dit første projekt.</p>
+                    <p style="font-weight: 600;">Kittet indeholder:</p>
+                    <p>1 x hæklenål</p>
+                    <p>4 x garnnøgler</p>
+                    <p>1 x hæftenål</p>
+                    <p>1 x mønster</p>
+                </div>
+                    <br>
+                <div class="beskrivelse-sektion4">
+                    <p>Størrelse: One size</p>
+                    <p>Garn: Soft Organic Wool fra Onion (80% økologisk uld og 20% nældefiber)</p>
+                    <p>Producent: Broderi Moderne</p>
+                    <p>Sværhedsgrad: Begynder</p>
+                </div>
+
+
+                <div class="beskrivelse-sektion3">
+                    <h3 id="pris-produkt">249 DKK</h3>
+                    
+                    <div class="produkt-antal">
+                        <button id="minus-knap">-</button>
+                        <input type="text" id="antal" value="1">
+                        <button id="plus-knap">+</button>
+                        <button id="tilfoej-kurv" class="tilfoej-kurv">Tilføj til kurv</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div id="cart-popup" class="hidden">
+                <h2>Din kurv</h2>
+                <ul id="cart-items"></ul>
+                <p id="total">Total: <span id="cart-total">0.00</span> DKK</p>
+                <!-- cart-total viser det antal varer der er i kurven -->
+            </div>
+           
+        </main>
+        <!-- main slut -->
+        
+        <!-- footer start -->
+        <footer>
+            <div class="left">
+                <section class="tider">
+                    <h4>Åbningstider</h4>
+                    <p>Mandag-fredag kl. 11.00 – 17.30</p>
+                    <p>Lørdag kl. 10.00 – 14.00</p>
+                </section>
+                <div class="social">
+                    <p>Sociale medier</p>
+                    <a href="https://www.facebook.com/broderimoderne/?locale=da_DK" target=”_blank”><img src="/img/ikoner/facebook.webp" alt="Facebook logo"> </a>
+                    <a href="https://www.instagram.com/broderimoderne/?hl=da" target=”_blank”><img src="/img/ikoner/instagram.webp" alt="Instagram logo"> </a>
+                </div>
+            </div>
+
+            <div class="footer-billede">
+                <img src="/img/logo.webp" alt="logo">
+            </div>
+
+            <div class="right">
+                <div class="info">
+                    <address>Broderi Moderne<br>Nørre Alle 45<br>8000 Århus C</address>
+                    <p>CVR: 41442778</p>
+                </div>
+                <div class="social">
+                    <p><a href="mailto:info@broderi-moderne.dk">info@broderi-moderne.dk</a></p>
+                    <p><a href="tel:+4551911244">+45 51 91 12 44</a></p>
+                </div>
+            </div>
+
+            <section class="tider-m">
+                <h4>Åbningstider</h4>
+                <p>Mandag-fredag<br>kl. 11.00 – 17.30</p>
+                <p>Lørdag<br>kl. 10.00 – 14.00</p>
+            </section>
+            <div class="social-m">
+                <p>Sociale medier</p>
+                <a href="https://www.facebook.com/broderimoderne/?locale=da_DK" target=”_blank”><img src="/img/ikoner/facebook.webp" alt="Facebook logo"> </a>
+                <a href="https://www.instagram.com/broderimoderne/?hl=da" target=”_blank”><img src="/img/ikoner/instagram.webp" alt="Instagram logo"> </a>
+            </div>
+
+            <section class="info-m">
+                <h4>Adresse</h4>
+                <address>Broderi Moderne<br>Nørre Alle 45</address>
+                <p>8000 Århus C<br>CVR: 41442778</p>
+            </section>
+            <div class="kontakt-footer-m">
+                <p><a href="mailto:info@broderi-moderne.dk">info@broderi-moderne.dk</a></p>
+                <p><a href="tel:+4551911244">+45 51 91 12 44</a></p>
+            </div>
+        </footer>
+        <!-- footer slut -->
+        <script src="/js/produkt.js"></script>
+
+    </body>
+</html>

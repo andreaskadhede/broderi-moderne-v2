@@ -1534,13 +1534,11 @@ footer h4 {
     align-items: center;
     color: var(--brown);
     font-family: "Krub", sans-serif;
+    width: 60vw;
 }
 
-.kurv-indhold {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60vw;
+.ordre-inhold {
+    margin-bottom: 50px;
 }
 
 .kurv-produkt p, .ordre-produkt p {
@@ -2873,6 +2871,11 @@ b{
         gap: 5px 0;
     }
 
+    .ordre-inhold {
+        margin-bottom: 15px;
+    }
+    
+
     .ordre-hidden {
         display: none;
     }
@@ -2947,9 +2950,13 @@ b{
     }
 
     .kurv-img {
-        border-radius: 50%;
         width: auto;
         height: 100%;
+    }
+
+    .ordre-img {
+        width: 30%;
+        height: auto;
     }
 
     #kurv-slut .levering {

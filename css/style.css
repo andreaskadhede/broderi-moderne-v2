@@ -161,73 +161,64 @@ header {
     cursor: pointer;
     height: 35px;
     width: 45px;
-
+}
 
 /* THE LINES */
-#span {
-	height: 8px;
+#burger-menu #span {
+    height: 8px;
     width: 50px;
     border-radius: 25px;
-	opacity: 1;
-	transition: 0.3s ease-in-out;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
     position: absolute;
 }
 
-#span:before, #span:after {
-	height: 8px;
+#burger-menu #span:before, #burger-menu #span:after {
+    height: 8px;
     width: 50px;
     border-radius: 25px;
-	opacity: 1;
-	transition: 0.3s ease-in-out;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
     position: absolute;
+    content: '';
 }
 
-#span:before,
-#span:after {
-	content: '';
-}
-
-/* // TOP */
-#span:before {
-	top: -15px;
+/* TOP */
+#burger-menu #span:before {
+    top: -15px;
     background: var(--green);
 }
 
-/* // MIDDLE */
-#span {
-	top: 13px;
+/* MIDDLE */
+#burger-menu #span {
+    top: 13px;
     background: var(--blue);
 }
 
-/* // BOTTOM */
-#span:after {
-	top: 15px;
+/* BOTTOM */
+#burger-menu #span:after {
+    top: 15px;
     background: var(--red);
 }
 
-/* // ROTATION ON CLICK */
-&.close {
-	/* // TOP */
-	#span:before {
-		top: 0px;
-		transform: rotate(90deg);
-        width: 50px;
-	}
-
-	/* // MIDDLE */
-	#span {
-		transform: rotate(-45deg);
-        width: 50px;
-	}
-
-	/* // BOTTOM */
-	#span:after {
-		top: 0px;
-		transform: rotate(90deg);
-		opacity: 0;
-	}
+/* ROTATION ON CLICK */
+#burger-menu.close #span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 50px;
 }
+
+#burger-menu.close #span {
+    transform: rotate(-45deg);
+    width: 50px;
 }
+
+#burger-menu.close #span:after {
+    top: 0px;
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
 
 
 #menu {
@@ -245,21 +236,22 @@ header {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
     text-transform: uppercase;
-
-	&.overlay {
-		visibility: visible;
-		opacity: 1;
-	}
-
-	a {
-        text-decoration: none;
-        color: var(--red);
-	}
 }
+
+#menu.overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+#menu a {
+    text-decoration: none;
+    color: var(--red);
+}
+
 
 
 /************************************************** INDEX **************************************************/
@@ -783,7 +775,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 40%;
-    font-family: "Kite One", sans serif;
+    font-family: "Kite One", sans-serif;
     color: var(--brown);
     text-align: center;
     font-size: 1rem;
@@ -1235,7 +1227,6 @@ footer h4 {
 .shop p {
     color: var(--brown);
     font-family: "Krub", sans-serif;
-    font-weight: 400;
 }
 
 .kurv {
@@ -1315,7 +1306,7 @@ footer h4 {
 
 .produkt .knapper {
     display: flex;
-    justify-content: baseline;
+    justify-content: end;
     gap: 10px;
     margin-top: 7.5px;
 }

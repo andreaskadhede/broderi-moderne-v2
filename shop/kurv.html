@@ -34,7 +34,7 @@
 
         <!-- burgerbar start -->
         <nav>
-            <a id="cart-icon" class="kurv" href="kurv copy.html"><img src="/img/ikoner/kurv.webp" alt="kurv ikon"><span id="cart-count">0</span></a>
+            <a id="cart-icon" class="kurv" href="kurv.html"><img src="/img/ikoner/kurv.webp" alt="kurv ikon"><span id="cart-count">0</span></a>
             <div id="burger-menu">
                 <span id="span"></span>
             </div>
@@ -58,21 +58,21 @@
         <h1 id="shop-h1">Din kurv</h1>
         <div class="kurv-indhold">
             <div class="kurv-titler">
-                <p>Produkt</p>
-                <p>Pris pr. stk.</p>
-                <p>Antal</p>
-                <p>I alt</p>
+                <p class="kurv-hidden">Produkt</p>
+                <p class="kurv-hidden">Pris pr. stk.</p>
+                <p class="kurv-hidden">Antal</p>
+                <p class="kurv-hidden">I alt</p>
             </div>
             <div class="kurv-produkt" id="produkt1">
-                <div>
+                <div class="div1">
                     <img class="kurv-img" src="/img/produkter/flora-8871.webp" alt="Flora Wool broderigarn i farven grøn(8871)">
                     <div class="kurv-tekst">
                         <p>Flora Wool • Fru Zippe</p>
                         <button id="skjulKnap1">Fjern fra kurv</button>
                     </div>
                 </div>
-                <p id="pris-per-stk1">13 DKK</p>
-                <div class="dropdown">
+                <p id="pris-per-stk1" class="div5">13 DKK</p>
+                <div class="dropdown div6">
                     <button class="dropbtn" id="dropdownButton1">Vælg antal</button>
                     <div class="dropdown-content" id="dropdownContent1">
                         <a href="#" onclick="selectOption(1, 13, 'total-price1', 'dropdownButton1', 'dropdownContent1')">1 stk.</a>
@@ -82,19 +82,22 @@
                         <a href="#" onclick="selectOption(5, 13, 'total-price1', 'dropdownButton1', 'dropdownContent1')">5 stk.</a>
                     </div>
                 </div>
-                <p id="total-price1">0 DKK</p>
+                <p id="total-price1" class="div7">0 DKK</p>
+                <p class="div2">Pris pr. stk.</p>
+                <p class="div3">Antal</p>
+                <p class="div4">I alt</p>
             </div>
 
             <div class="kurv-produkt" id="produkt2">
-                <div>
+                <div class="div1">
                     <img class="kurv-img" src="/img/kits/kit-blomst-bi.webp" alt="Broderi kit med blomster of bier fra Broderi Moderne">
                     <div class="kurv-tekst">
                         <p>Broderi Kit • Blomster & Bier</p>
                         <button id="skjulKnap2">Fjern fra kurv</button>
                     </div>
                 </div>
-                <p id="pris-per-stk2">199 DKK</p>
-                <div class="dropdown">
+                <p id="pris-per-stk2" class="div5">199 DKK</p>
+                <div class="dropdown div6">
                     <button class="dropbtn" id="dropdownButton2">Vælg antal</button>
                     <div class="dropdown-content" id="dropdownContent2">
                         <a href="#" onclick="selectOption(1, 199, 'total-price2', 'dropdownButton2', 'dropdownContent2')">1 stk.</a>
@@ -104,19 +107,22 @@
                         <a href="#" onclick="selectOption(5, 199, 'total-price2', 'dropdownButton2', 'dropdownContent2')">5 stk.</a>
                     </div>
                 </div>
-                <p id="total-price2">0 DKK</p>
+                <p id="total-price2" class="div7">0 DKK</p>
+                <p class="div2">Pris pr. stk.</p>
+                <p class="div3">Antal</p>
+                <p class="div4">I alt</p>
             </div>
 
             <div class="kurv-produkt" id="produkt3">
-                <div>
+                <div class="div1">
                     <img class="kurv-img" src="/img/produkter/chenille-nal.webp" alt="Broderi nål af Merchant & Mills, i typen Chenille">
                     <div class="kurv-tekst">
                         <p>Broderinåle • Merchant & Mills</p>
                         <button id="skjulKnap3">Fjern fra kurv</button>
                     </div>
                 </div>
-                <p id="pris-per-stk3">54 DKK</p>
-                <div class="dropdown">
+                <p id="pris-per-stk3" class="div5">54 DKK</p>
+                <div class="dropdown div6">
                     <button class="dropbtn" id="dropdownButton3">Vælg antal</button>
                     <div class="dropdown-content" id="dropdownContent3">
                         <a href="#" onclick="selectOption(1, 54, 'total-price3', 'dropdownButton3', 'dropdownContent3')">1 stk.</a>
@@ -126,7 +132,10 @@
                         <a href="#" onclick="selectOption(5, 54, 'total-price3', 'dropdownButton3', 'dropdownContent3')">5 stk.</a>
                     </div>
                 </div>
-                <p id="total-price3">0 DKK</p>
+                <p id="total-price3" class="div7">0 DKK</p>
+                <p class="div2">Pris pr. stk.</p>
+                <p class="div3">Antal</p>
+                <p class="div4">I alt</p>
             </div>
 
             <div id="kurv-slut">

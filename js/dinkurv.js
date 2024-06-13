@@ -1,113 +1,57 @@
-"use strict";
+        "use strict";
 
-document.addEventListener("DOMContentLoaded", function() {
-    const prisPerStk1 = 13;
-    const prisPerStk2 = 199;
-    const prisPerStk3 = 54;
+        document.addEventListener("DOMContentLoaded", function() {
+            const products = [
+                {id: 1, price: 13},
+                {id: 2, price: 199},
+                {id: 3, price: 54}
+            ];
 
-    // Event listeners for each dropdown
-    document.getElementById("dropdownButton1").addEventListener("click", function() {
-        const dropdownContent = document.getElementById("dropdownContent1");
-        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-    });
+            // Event listeners for each dropdown button
+            products.forEach(product => {
+                const dropdownButton = document.getElementById(`dropdownButton${product.id}`);
+                dropdownButton.addEventListener("click", function() {
+                    const dropdownContent = document.getElementById(`dropdownContent${product.id}`);
+                    dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+                });
 
-    document.getElementById("dropdownButton2").addEventListener("click", function() {
-        const dropdownContent = document.getElementById("dropdownContent2");
-        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-    });
+                // Remove product from the list
+                document.getElementById(`skjulKnap${product.id}`).onclick = function() {
+                    document.getElementById(`produkt${product.id}`).style.display = 'none';
+                    updateTotalPrice();
+                };
+            });
 
-    document.getElementById("dropdownButton3").addEventListener("click", function() {
-        const dropdownContent = document.getElementById("dropdownContent3");
-        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-    });
-
-    // Close dropdowns when clicking outside of them
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            const dropdowns = document.getElementsByClassName("dropdown-content");
-            for (let i = 0; i < dropdowns.length; i++) {
-                const openDropdown = dropdowns[i];
-                if (openDropdown.style.display === "block") {
-                    openDropdown.style.display = "none";
+            // Close dropdowns when clicking outside of them
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    const dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (let i = 0; i < dropdowns.length; i++) {
+                        const openDropdown = dropdowns[i];
+                        if (openDropdown.style.display === "block") {
+                            openDropdown.style.display = "none";
+                        }
+                    }
                 }
+            };
+
+            // Select option and update price
+            window.selectOption = function(quantity, pricePerUnit, totalPriceId, dropdownButtonId, dropdownContentId) {
+                const totalPriceElement = document.getElementById(totalPriceId);
+                const totalPrice = quantity * pricePerUnit;
+                totalPriceElement.textContent = `${totalPrice} DKK`;
+                document.getElementById(dropdownButtonId).textContent = `${quantity} stk.`;
+                document.getElementById(dropdownContentId).style.display = "none";
+                updateTotalPrice();
+            };
+
+            function updateTotalPrice() {
+                let totalPrice = 0;
+                products.forEach(product => {
+                    const priceText = document.getElementById(`total-price${product.id}`).textContent;
+                    const price = parseInt(priceText) || 0;
+                    totalPrice += price;
+                });
+                document.getElementById('ialtpris').textContent = `${totalPrice} DKK`;
             }
-        }
-    };
-
-    // Remove product from the list
-    document.getElementById('skjulKnap1').onclick = function() {
-        document.getElementById('produkt1').style.display = 'none';
-    };
-
-    document.getElementById('skjulKnap2').onclick = function() {
-        document.getElementById('produkt2').style.display = 'none';
-    };
-
-    document.getElementById('skjulKnap3').onclick = function() {
-        document.getElementById('produkt3').style.display = 'none';
-    };
-
-    function selectOption(quantity, pricePerUnit, totalPriceId, dropdownButtonId, dropdownContentId) {
-        const totalPriceElement = document.getElementById(totalPriceId);
-        const totalPrice = quantity * pricePerUnit;
-        totalPriceElement.textContent = `${totalPrice} DKK`;
-        document.getElementById(dropdownButtonId).textContent = `${quantity} stk.`;
-        document.getElementById(dropdownContentId).style.display = "none";
-        console.log(`Selected ${quantity} at ${pricePerUnit} each, total is ${totalPrice}`);
-        updateTotalPrice();
-    }
-
-    function updateTotalPrice() {
-        const totalPrice1 = parseInt(document.getElementById('total-price1').textContent) || 0;
-        const totalPrice2 = parseInt(document.getElementById('total-price2').textContent) || 0;
-        const totalPrice3 = parseInt(document.getElementById('total-price3').textContent) || 0;
-
-        console.log(`Total Prices: ${totalPrice1}, ${totalPrice2}, ${totalPrice3}`);
-        const totalPrice = totalPrice1 + totalPrice2 + totalPrice3;
-        console.log(`Total Price: ${totalPrice}`);
-        document.getElementById('ialtpris').textContent = `${totalPrice} DKK`;
-    }
-    
-
-    // Event listeners til hver dropdown
-    document.getElementById("dropdownButton1").addEventListener("click", function() {
-        const dropdownContent = document.getElementById("dropdownContent1");
-        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-    });
-
-    document.getElementById("dropdownButton2").addEventListener("click", function() {
-        const dropdownContent = document.getElementById("dropdownContent2");
-        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-    });
-
-    document.getElementById("dropdownButton3").addEventListener("click", function() {
-        const dropdownContent = document.getElementById("dropdownContent3");
-        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-    });
-
-    // Luk dropdown igen
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            const dropdowns = document.getElementsByClassName("dropdown-content");
-            for (let i = 0; i < dropdowns.length; i++) {
-                const openDropdown = dropdowns[i];
-                if (openDropdown.style.display === "block") {
-                    openDropdown.style.display = "none";
-                }
-            }
-        }
-    };
-
-    // Fjern produkt fra listen
-    document.getElementById('skjulKnap1').onclick = function() {
-        document.getElementById('produkt1').style.display = 'none';
-    };
-
-    document.getElementById('skjulKnap2').onclick = function() {
-        document.getElementById('produkt2').style.display = 'none';
-    };
-
-    document.getElementById('skjulKnap3').onclick = function() {
-        document.getElementById('produkt3').style.display = 'none';
-    };
-});
+        });

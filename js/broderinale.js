@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", function() {
             const id = lillebillede.getAttribute('id');
             console.log('ID for det klikkede billede:', id);
             
-            // Opdater storbillede src
+           
             storbillede.src = lillebillede.src;
             console.log('Ny src for storbillede:', storbillede.src);
             
-            // Opdater tekst for farveBeskrivelse
+           
             const farveInfo = farveData[id];
             console.log('Farveinfo:', farveInfo);
             if (farveInfo) {

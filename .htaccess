@@ -1,1 +1,10 @@
-ErrorDocument 404 /404.html
+# Specify the custom 404 error page
+ErrorDocument 404 /shop/404.html
+
+# Optional: Enable the rewrite engine if not already enabled
+RewriteEngine On
+
+# Ensure that the 404 page is accessible from subdirectories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /404.html [L]

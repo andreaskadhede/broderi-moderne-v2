@@ -1898,15 +1898,11 @@ footer h4 {
 }
 
 .tilfoej-kurv:hover {
-    background-color: var(--blue);
-    color: var(--bluefaded);
+   cursor: pointer;
 }
 
 .produkt-antal button:hover {
-    background-color: var(--blue);
-    color: var(--bluefaded);
     cursor: pointer; 
-    border: solid var(--bluefaded) 3px
 }
 
 /*wrapper*/
